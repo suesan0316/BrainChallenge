@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/DetectiveGameScoreLinaer">
+        <TextView
+            android:text="スコア : 1234567"
+            style="@style/DetectiveGameScore" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/DetectiveGameStateLinaer"
+        android:gravity="center">
+        <TextView
+            android:text="Level:1 失敗回数:1/3"
+            style="@style/DetectiveGameState" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/DetectiveGameInTitleLinear">
+        <ImageView
+            style="@style/DetectiveGameInTitleImage"
+            android:src="@drawable/detective_game_in_title" />
+        <ImageView
+            style="@style/DetectiveGameTargetImage"
+            android:src="@drawable/detective_game_dog" />
+    </LinearLayout>
+    <GridLayout
+        style="@style/DetectiveGameTile"
+        android:id="@+id/gridLayout1">
+        <ImageButton
+            android:id="@+id/button1"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button2"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_dog"
+            android:adjustViewBounds="false"
+            android:tag="collect" />
+        <ImageButton
+            android:id="@+id/button3"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button4"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button5"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button6"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button7"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button8"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button9"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button10"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button11"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_dog"
+            android:tag="collect" />
+        <ImageButton
+            android:id="@+id/button12"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button13"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_dog"
+            android:tag="collect" />
+        <ImageButton
+            android:id="@+id/button14"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button15"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button16"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button17"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button18"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button19"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_no_image" />
+        <ImageButton
+            android:id="@+id/button20"
+            style="@style/DetectiveTileButton"
+            android:src="@drawable/detective_game_dog"
+            android:tag="collect" />
+    </GridLayout>
+</LinearLayout>

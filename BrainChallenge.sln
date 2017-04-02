@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainChallenge.Droid", "BrainChallenge.Droid\BrainChallenge.Droid.csproj", "{F2D062B4-41D9-4B2B-B726-CAE67FB68FCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainChallenge.Droid.UITests", "BrainChallenge.Droid.UITests\BrainChallenge.Droid.UITests.csproj", "{A50FD787-2499-40E9-8C21-D1FD43644A48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainChallenge.Common", "BrainChallenge.Common\BrainChallenge.Common.csproj", "{FF25C661-D611-40CE-993C-182824A28CE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainChallenge.Droid.Mock", "BrainChallenge.Droid.Mock\BrainChallenge.Droid.Mock.csproj", "{562C8250-0CF1-4A32-906C-AC1373003814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainChallenge.Common.Tests", "BrainChallenge.Common.Tests\BrainChallenge.Common.Tests.csproj", "{5FE97DD8-E477-4554-8C77-5DF0F3172110}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2D062B4-41D9-4B2B-B726-CAE67FB68FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D062B4-41D9-4B2B-B726-CAE67FB68FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2D062B4-41D9-4B2B-B726-CAE67FB68FCF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F2D062B4-41D9-4B2B-B726-CAE67FB68FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2D062B4-41D9-4B2B-B726-CAE67FB68FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A50FD787-2499-40E9-8C21-D1FD43644A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A50FD787-2499-40E9-8C21-D1FD43644A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A50FD787-2499-40E9-8C21-D1FD43644A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A50FD787-2499-40E9-8C21-D1FD43644A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF25C661-D611-40CE-993C-182824A28CE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF25C661-D611-40CE-993C-182824A28CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF25C661-D611-40CE-993C-182824A28CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF25C661-D611-40CE-993C-182824A28CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562C8250-0CF1-4A32-906C-AC1373003814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562C8250-0CF1-4A32-906C-AC1373003814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562C8250-0CF1-4A32-906C-AC1373003814}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{562C8250-0CF1-4A32-906C-AC1373003814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562C8250-0CF1-4A32-906C-AC1373003814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE97DD8-E477-4554-8C77-5DF0F3172110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE97DD8-E477-4554-8C77-5DF0F3172110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE97DD8-E477-4554-8C77-5DF0F3172110}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5FE97DD8-E477-4554-8C77-5DF0F3172110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE97DD8-E477-4554-8C77-5DF0F3172110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE97DD8-E477-4554-8C77-5DF0F3172110}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

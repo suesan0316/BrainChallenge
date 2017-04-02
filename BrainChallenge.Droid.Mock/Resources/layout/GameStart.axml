@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/SelectGameTitle"
+        android:text="迷子を探せ!!" />
+    <LinearLayout
+        style="@style/SelectGameImageLinear">
+        <ImageView
+            style="@style/SelectGameImage"
+            android:src="@drawable/detective_game_title"
+            android:id="@+id/imageView1" />
+    </LinearLayout>
+    <TextView
+        style="@style/SelectGameScoreExplain" />
+    <TextView
+        android:text="1.9999999"
+        style="@style/SelectGameScore"
+        android:id="@+id/textView3" />
+    <TextView
+        android:text="2.8888888"
+        style="@style/SelectGameScore"
+        android:id="@+id/textView4" />
+    <TextView
+        android:text="3.7777777"
+        style="@style/SelectGameScore"
+        android:id="@+id/textView5" />
+    <TextView
+        android:text="4.6666666"
+        style="@style/SelectGameScore"
+        android:id="@+id/textView6" />
+    <TextView
+        android:text="5.5555555"
+        style="@style/SelectGameScore"
+        android:id="@+id/textView7" />
+    <LinearLayout
+        style="@style/SelectGameButtonLinear">
+        <Button
+            style="@style/SelectGameHelpButton"
+            android:id="@+id/helpButton" />
+        <Button
+            style="@style/SelectGameStartButton"
+            android:id="@+id/gameStartButton" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/SelectGameOptionButtonLinear">
+        <Button
+            style="@style/SelectGameReturnButton"
+            android:id="@+id/returnButton" />
+    </LinearLayout>
+</LinearLayout>
