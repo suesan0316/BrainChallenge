@@ -76,12 +76,12 @@
     <Reference Include="Xamarin.Android.NUnitLite" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client\ClientService\ClientServiceTestSample.cs" />
     <Compile Include="Data\DataService\DataServiceTestSample.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="TestSample.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestData.cs" />
+    <Compile Include="Util\Extentions\IEnumerableExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -97,12 +97,15 @@
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BrainChallenge.Common\BrainChallenge.Common.csproj">
       <Project>{ff25c661-d611-40ce-993c-182824a28ce9}</Project>
       <Name>BrainChallenge.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Client\ClientService\" />
+    <Folder Include="Data\DataService\Implement\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

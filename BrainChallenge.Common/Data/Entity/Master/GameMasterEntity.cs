@@ -12,7 +12,7 @@ namespace BrainChallenge.Common.Data.Entity.Master
         /// <summary>
         /// ゲームID(PrimaryKey)
         /// </summary>
-        [PrimaryKey, AutoIncrement, Column("_gameId")]
+        [PrimaryKey, Column("_gameId")]
         public int GameId { get; set; }
         /// <summary>
         /// ゲーム名
