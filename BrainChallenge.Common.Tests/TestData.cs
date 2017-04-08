@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using BrainChallenge.Common.Data.Entity.Master;
+using BrainChallenge.Common.Data.Entity.General;
 using BrainChallenge.Common.Data.Connection;
 using System;
 
@@ -11,6 +12,9 @@ namespace BrainChallenge.Common.Tests
         public static List<GameTypeMasterEntity> GameTypeMasterTestData = new List<GameTypeMasterEntity>();
         public static List<HelpMasterEntity> HelpMasterTestData = new List<HelpMasterEntity>();
         public static List<ScoreEntity> ScoreTestData = new List<ScoreEntity>();
+
+        //テスト
+        public static List<SampleEntity> SampleTestData = new List<SampleEntity>();
 
         static TestData()
         {
@@ -40,6 +44,11 @@ namespace BrainChallenge.Common.Tests
             GameMasterTestData.Add(new GameMasterEntity { GameId = 9, GameName = "問題解決能力ゲーム3", GameTypeId = 3, ScoreType = 0, TitleImage = "computational3_game_title", IconImage = "computational3_game_icon", Class = "ComputationalGame3Controller", GameTime = 3L });
             //GameMasterTestData.Add(new GameMasterEntity { GameId = 10, GameName = "問題解決能力ゲーム4", GameTypeId = 3, ScoreType = 1, TitleImage = "computational4_game_title", IconImage = "computational4_game_icon", Class = "ComputationalGame4Controller", GameTime = 4L });
 
+            SampleTestData.Add(new SampleEntity { Id = 0, Name = "テスト0" });
+            SampleTestData.Add(new SampleEntity { Id = 1, Name = "テスト1" });
+            SampleTestData.Add(new SampleEntity { Id = 2, Name = "テスト2" });
+            SampleTestData.Add(new SampleEntity { Id = 3, Name = "テスト3" });
+
         }
 
         private static void LoadingData()
@@ -49,6 +58,8 @@ namespace BrainChallenge.Common.Tests
 
                 GameTypeMasterTestData.ForEach(data => con.Insert(data));
                 GameMasterTestData.ForEach(data => con.Insert(data));
+
+                SampleTestData.ForEach(data => con.Insert(data));
 
             }
         }
@@ -68,6 +79,8 @@ namespace BrainChallenge.Common.Tests
                     con.DropTable<GameMasterEntity>();
                     con.DropTable<HelpMasterEntity>();
                     con.DropTable<ScoreEntity>();
+
+                    con.DropTable<SampleEntity>();
                 }
                 catch (Exception e)
                 {
@@ -80,6 +93,8 @@ namespace BrainChallenge.Common.Tests
                 con.CreateTable<GameMasterEntity>();
                 con.CreateTable<HelpMasterEntity>();
                 con.CreateTable<ScoreEntity>();
+
+                con.CreateTable<SampleEntity>();
 
             }
 

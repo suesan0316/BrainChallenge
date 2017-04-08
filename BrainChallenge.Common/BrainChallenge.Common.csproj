@@ -29,6 +29,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Data\Connection\ConnectionProvider.cs" />
+    <Compile Include="Data\DataService\Implement\SampleDataService.cs" />
     <Compile Include="Data\Entity\Master\HelpMasterEntity.cs" />
     <Compile Include="Data\Entity\General\ScoreEntity.cs" />
     <Compile Include="Data\Entity\Master\GameMasterEntity.cs" />
@@ -36,13 +37,13 @@
     <Compile Include="Data\DataService\Interface\IDataService.cs" />
     <Compile Include="Data\DataService\Interface\IGeneralDataService.cs" />
     <Compile Include="Data\DataService\Interface\IMasterDataService.cs" />
+    <Compile Include="Data\Entity\General\SampleEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\Extentions\IEnumerableExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Client\ClientModel\" />
     <Folder Include="Client\ClientService\" />
-    <Folder Include="Data\DataService\Implement\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLite-net, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
