@@ -28,6 +28,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Client\ClientModel\GameModel.cs" />
+    <Compile Include="Client\ClientService\InterFace\IMenuService.cs" />
+    <Compile Include="Client\System\ClientException.cs" />
     <Compile Include="Data\Connection\ConnectionProvider.cs" />
     <Compile Include="Data\DataService\Implement\SampleDataService.cs" />
     <Compile Include="Data\Entity\Master\HelpMasterEntity.cs" />
@@ -42,8 +45,7 @@
     <Compile Include="Util\Extentions\IEnumerableExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Client\ClientModel\" />
-    <Folder Include="Client\ClientService\" />
+    <Folder Include="Client\ClientService\Implement\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLite-net, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
