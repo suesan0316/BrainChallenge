@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+ï»¿using System.Collections.Generic;
 using BrainChallenge.Common.Data.Entity.Master;
 using BrainChallenge.Common.Data.Entity.General;
 using BrainChallenge.Common.Data.Connection;
@@ -13,41 +13,41 @@ namespace BrainChallenge.Common.Tests
         public static List<HelpMasterEntity> HelpMasterTestData = new List<HelpMasterEntity>();
         public static List<ScoreEntity> ScoreTestData = new List<ScoreEntity>();
 
-        //ƒeƒXƒg
+        //ãƒ†ã‚¹ãƒˆ
         public static List<SampleEntity> SampleTestData = new List<SampleEntity>();
 
         static TestData()
         {
 
-            GameTypeMasterTestData.Add(new GameTypeMasterEntity { GameTypeId = 0, Name = "‹L‰¯—Í" });
-            GameTypeMasterTestData.Add(new GameTypeMasterEntity { GameTypeId = 1, Name = "_“î«" });
-            GameTypeMasterTestData.Add(new GameTypeMasterEntity { GameTypeId = 2, Name = "ƒXƒs[ƒh" });
-            GameTypeMasterTestData.Add(new GameTypeMasterEntity { GameTypeId = 3, Name = "–â‘è‰ğŒˆ”\—Í" });
+            GameTypeMasterTestData.Add(new GameTypeMasterEntity { GameTypeId = 0, Name = "è¨˜æ†¶åŠ›" });
+            GameTypeMasterTestData.Add(new GameTypeMasterEntity { GameTypeId = 1, Name = "æŸ”è»Ÿæ€§" });
+            GameTypeMasterTestData.Add(new GameTypeMasterEntity { GameTypeId = 2, Name = "ã‚¹ãƒ”ãƒ¼ãƒ‰" });
+            GameTypeMasterTestData.Add(new GameTypeMasterEntity { GameTypeId = 3, Name = "å•é¡Œè§£æ±ºèƒ½åŠ›" });
 
-            GameMasterTestData.Add(new GameMasterEntity { GameId = 0, GameName = "–Àq‚ğ’T‚¹!!", GameTypeId = 0, ScoreType = 0, TitleImage = "detective_game_title", IconImage = "detective_game_icon", Class = "DetectiveGameController", GameTime = 1L });
-            GameMasterTestData.Add(new GameMasterEntity { GameId = 1, GameName = "‹L‰¯—ÍƒQ[ƒ€2", GameTypeId = 0, ScoreType = 1, TitleImage = "memory2_game_title", IconImage = "memory2_game_icon", Class = "MemoryGame2Controller", GameTime = 2L });
-            GameMasterTestData.Add(new GameMasterEntity { GameId = 2, GameName = "‹L‰¯—ÍƒQ[ƒ€3", GameTypeId = 0, ScoreType = 0, TitleImage = "memory3_game_title", IconImage = "memory3_game_icon", Class = "MemoryGame3Controller", GameTime = 3L });
-            GameMasterTestData.Add(new GameMasterEntity { GameId = 3, GameName = "‹L‰¯—ÍƒQ[ƒ€4", GameTypeId = 0, ScoreType = 1, TitleImage = "memory4_game_title", IconImage = "memory4_game_icon", Class = "MemoryGame4Controller", GameTime = 4L });
+            GameMasterTestData.Add(new GameMasterEntity { GameId = 0, GameName = "è¿·å­ã‚’æ¢ã›!!", GameTypeId = 0, ScoreType = 0, TitleImage = "detective_game_title", IconImage = "detective_game_icon", Class = "DetectiveGameController", GameTime = 1L });
+            GameMasterTestData.Add(new GameMasterEntity { GameId = 1, GameName = "è¨˜æ†¶åŠ›ã‚²ãƒ¼ãƒ 2", GameTypeId = 0, ScoreType = 1, TitleImage = "memory2_game_title", IconImage = "memory2_game_icon", Class = "MemoryGame2Controller", GameTime = 2L });
+            GameMasterTestData.Add(new GameMasterEntity { GameId = 2, GameName = "è¨˜æ†¶åŠ›ã‚²ãƒ¼ãƒ 3", GameTypeId = 0, ScoreType = 0, TitleImage = "memory3_game_title", IconImage = "memory3_game_icon", Class = "MemoryGame3Controller", GameTime = 3L });
+            GameMasterTestData.Add(new GameMasterEntity { GameId = 3, GameName = "è¨˜æ†¶åŠ›ã‚²ãƒ¼ãƒ 4", GameTypeId = 0, ScoreType = 1, TitleImage = "memory4_game_title", IconImage = "memory4_game_icon", Class = "MemoryGame4Controller", GameTime = 4L });
 
-            GameMasterTestData.Add(new GameMasterEntity { GameId = 4, GameName = "_“î«ƒQ[ƒ€1", GameTypeId = 1, ScoreType = 0, TitleImage = "flexibility1_game_title", IconImage = "flexibility1_game_icon", Class = "FlexibilityGame1Controller", GameTime = 1L });
-            //GameMasterTestData.Add(new GameMasterEntity { GameId = 11, GameName = "_“î«ƒQ[ƒ€2", GameTypeId = 1, ScoreType = 1, TitleImage = "flexibility2_game_title", IconImage = "flexibility2_game_icon", Class = "FlexibilityGame2Controller", GameTime = 2L });
-            //GameMasterTestData.Add(new GameMasterEntity { GameId = 12, GameName = "_“î«ƒQ[ƒ€3", GameTypeId = 1, ScoreType = 0, TitleImage = "flexibility3_game_title", IconImage = "flexibility3_game_icon", Class = "FlexibilityGame3Controller", GameTime = 3L });
-            //GameMasterTestData.Add(new GameMasterEntity { GameId = 13, GameName = "_“î«ƒQ[ƒ€4", GameTypeId = 1, ScoreType = 1, TitleImage = "flexibility4_game_title", IconImage = "flexibility4_game_icon", Class = "FlexibilityGame4Controller", GameTime = 4L });
+            GameMasterTestData.Add(new GameMasterEntity { GameId = 4, GameName = "æŸ”è»Ÿæ€§ã‚²ãƒ¼ãƒ 1", GameTypeId = 1, ScoreType = 0, TitleImage = "flexibility1_game_title", IconImage = "flexibility1_game_icon", Class = "FlexibilityGame1Controller", GameTime = 1L });
+            //GameMasterTestData.Add(new GameMasterEntity { GameId = 11, GameName = "æŸ”è»Ÿæ€§ã‚²ãƒ¼ãƒ 2", GameTypeId = 1, ScoreType = 1, TitleImage = "flexibility2_game_title", IconImage = "flexibility2_game_icon", Class = "FlexibilityGame2Controller", GameTime = 2L });
+            //GameMasterTestData.Add(new GameMasterEntity { GameId = 12, GameName = "æŸ”è»Ÿæ€§ã‚²ãƒ¼ãƒ 3", GameTypeId = 1, ScoreType = 0, TitleImage = "flexibility3_game_title", IconImage = "flexibility3_game_icon", Class = "FlexibilityGame3Controller", GameTime = 3L });
+            //GameMasterTestData.Add(new GameMasterEntity { GameId = 13, GameName = "æŸ”è»Ÿæ€§ã‚²ãƒ¼ãƒ 4", GameTypeId = 1, ScoreType = 1, TitleImage = "flexibility4_game_title", IconImage = "flexibility4_game_icon", Class = "FlexibilityGame4Controller", GameTime = 4L });
 
-            GameMasterTestData.Add(new GameMasterEntity { GameId = 5, GameName = "ƒXƒs[ƒhƒQ[ƒ€1", GameTypeId = 2, ScoreType = 0, TitleImage = "speed1_game_title", IconImage = "speed1_game_icon", Class = "SpeedGame1Controller", GameTime = 1L });
-            GameMasterTestData.Add(new GameMasterEntity { GameId = 6, GameName = "ƒXƒs[ƒhƒQ[ƒ€2", GameTypeId = 2, ScoreType = 1, TitleImage = "speed2_game_title", IconImage = "speed2_game_icon", Class = "SpeedGame2Controller", GameTime = 2L });
-            //GameMasterTestData.Add(new GameMasterEntity { GameId = 14, GameName = "ƒXƒs[ƒhƒQ[ƒ€3", GameTypeId = 2, ScoreType = 0, TitleImage = "speed3_game_title", IconImage = "speed3_game_icon", Class = "SpeedGame3Controller", GameTime = 3L });
-            //GameMasterTestData.Add(new GameMasterEntity { GameId = 15, GameName = "ƒXƒs[ƒhƒQ[ƒ€4", GameTypeId = 2, ScoreType = 1, TitleImage = "speed4_game_title", IconImage = "speed4_game_icon", Class = "SpeedGame4Controller", GameTime = 4L });
+            GameMasterTestData.Add(new GameMasterEntity { GameId = 5, GameName = "ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚²ãƒ¼ãƒ 1", GameTypeId = 2, ScoreType = 0, TitleImage = "speed1_game_title", IconImage = "speed1_game_icon", Class = "SpeedGame1Controller", GameTime = 1L });
+            GameMasterTestData.Add(new GameMasterEntity { GameId = 6, GameName = "ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚²ãƒ¼ãƒ 2", GameTypeId = 2, ScoreType = 1, TitleImage = "speed2_game_title", IconImage = "speed2_game_icon", Class = "SpeedGame2Controller", GameTime = 2L });
+            //GameMasterTestData.Add(new GameMasterEntity { GameId = 14, GameName = "ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚²ãƒ¼ãƒ 3", GameTypeId = 2, ScoreType = 0, TitleImage = "speed3_game_title", IconImage = "speed3_game_icon", Class = "SpeedGame3Controller", GameTime = 3L });
+            //GameMasterTestData.Add(new GameMasterEntity { GameId = 15, GameName = "ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚²ãƒ¼ãƒ 4", GameTypeId = 2, ScoreType = 1, TitleImage = "speed4_game_title", IconImage = "speed4_game_icon", Class = "SpeedGame4Controller", GameTime = 4L });
 
-            GameMasterTestData.Add(new GameMasterEntity { GameId = 7, GameName = "–â‘è‰ğŒˆ”\—ÍƒQ[ƒ€1", GameTypeId = 3, ScoreType = 0, TitleImage = "computational1_game_title", IconImage = "computational1_game_icon", Class = "ComputationalGame1Controller", GameTime = 1L });
-            GameMasterTestData.Add(new GameMasterEntity { GameId = 8, GameName = "–â‘è‰ğŒˆ”\—ÍƒQ[ƒ€2", GameTypeId = 3, ScoreType = 1, TitleImage = "computational2_game_title", IconImage = "computational2_game_icon", Class = "ComputationalGame2Controller", GameTime = 2L });
-            GameMasterTestData.Add(new GameMasterEntity { GameId = 9, GameName = "–â‘è‰ğŒˆ”\—ÍƒQ[ƒ€3", GameTypeId = 3, ScoreType = 0, TitleImage = "computational3_game_title", IconImage = "computational3_game_icon", Class = "ComputationalGame3Controller", GameTime = 3L });
-            //GameMasterTestData.Add(new GameMasterEntity { GameId = 10, GameName = "–â‘è‰ğŒˆ”\—ÍƒQ[ƒ€4", GameTypeId = 3, ScoreType = 1, TitleImage = "computational4_game_title", IconImage = "computational4_game_icon", Class = "ComputationalGame4Controller", GameTime = 4L });
+            GameMasterTestData.Add(new GameMasterEntity { GameId = 7, GameName = "å•é¡Œè§£æ±ºèƒ½åŠ›ã‚²ãƒ¼ãƒ 1", GameTypeId = 3, ScoreType = 0, TitleImage = "computational1_game_title", IconImage = "computational1_game_icon", Class = "ComputationalGame1Controller", GameTime = 1L });
+            GameMasterTestData.Add(new GameMasterEntity { GameId = 8, GameName = "å•é¡Œè§£æ±ºèƒ½åŠ›ã‚²ãƒ¼ãƒ 2", GameTypeId = 3, ScoreType = 1, TitleImage = "computational2_game_title", IconImage = "computational2_game_icon", Class = "ComputationalGame2Controller", GameTime = 2L });
+            GameMasterTestData.Add(new GameMasterEntity { GameId = 9, GameName = "å•é¡Œè§£æ±ºèƒ½åŠ›ã‚²ãƒ¼ãƒ 3", GameTypeId = 3, ScoreType = 0, TitleImage = "computational3_game_title", IconImage = "computational3_game_icon", Class = "ComputationalGame3Controller", GameTime = 3L });
+            //GameMasterTestData.Add(new GameMasterEntity { GameId = 10, GameName = "å•é¡Œè§£æ±ºèƒ½åŠ›ã‚²ãƒ¼ãƒ 4", GameTypeId = 3, ScoreType = 1, TitleImage = "computational4_game_title", IconImage = "computational4_game_icon", Class = "ComputationalGame4Controller", GameTime = 4L });
 
-            SampleTestData.Add(new SampleEntity { Id = 0, Name = "ƒeƒXƒg0" });
-            SampleTestData.Add(new SampleEntity { Id = 1, Name = "ƒeƒXƒg1" });
-            SampleTestData.Add(new SampleEntity { Id = 2, Name = "ƒeƒXƒg2" });
-            SampleTestData.Add(new SampleEntity { Id = 3, Name = "ƒeƒXƒg3" });
+            SampleTestData.Add(new SampleEntity { Id = 0, Name = "ãƒ†ã‚¹ãƒˆ0" });
+            SampleTestData.Add(new SampleEntity { Id = 1, Name = "ãƒ†ã‚¹ãƒˆ1" });
+            SampleTestData.Add(new SampleEntity { Id = 2, Name = "ãƒ†ã‚¹ãƒˆ2" });
+            SampleTestData.Add(new SampleEntity { Id = 3, Name = "ãƒ†ã‚¹ãƒˆ3" });
 
         }
 
@@ -74,7 +74,7 @@ namespace BrainChallenge.Common.Tests
 
                 try
                 {
-                    //ƒe[ƒuƒ‹‚ğíœ
+                    //ãƒ†ãƒ¼ãƒ–ãƒ«ã‚’å‰Šé™¤
                     con.DropTable<GameTypeMasterEntity>();
                     con.DropTable<GameMasterEntity>();
                     con.DropTable<HelpMasterEntity>();
@@ -88,7 +88,7 @@ namespace BrainChallenge.Common.Tests
                 }
 
 
-                //ƒe[ƒuƒ‹‚ğì¬
+                //ãƒ†ãƒ¼ãƒ–ãƒ«ã‚’ä½œæˆ
                 con.CreateTable<GameTypeMasterEntity>();
                 con.CreateTable<GameMasterEntity>();
                 con.CreateTable<HelpMasterEntity>();
@@ -104,7 +104,7 @@ namespace BrainChallenge.Common.Tests
 
         private static string GetLocalFilePath(string filename)
         {
-            //w’è‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ÌƒpƒX‚ğæ“¾‚µ‚Ü‚·B‚È‚¯‚ê‚Îì¬‚µ‚Ä‚»‚ÌƒpƒX‚ğ•Ô‹p‚µ‚Ü‚·
+            //æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹ã‚’å–å¾—ã—ã¾ã™ã€‚ãªã‘ã‚Œã°ä½œæˆã—ã¦ãã®ãƒ‘ã‚¹ã‚’è¿”å´ã—ã¾ã™
             var path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             return System.IO.Path.Combine(path, filename);
         }
