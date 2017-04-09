@@ -1,4 +1,4 @@
-using NUnit.Framework;
+ï»¿using NUnit.Framework;
 using BrainChallenge.Common.Data.DataService.Implement;
 using BrainChallenge.Common.Data.Entity.General;
 using System.Linq;
@@ -53,7 +53,7 @@ namespace BrainChallenge.Common.Tests.Data.DataService.Implement
         [Test]
         public void selectAndTest2()
         {
-            var result = serv.select(new SampleEntity { Id = -1, Name = "ƒeƒXƒg1" });
+            var result = serv.select(new SampleEntity { Id = -1, Name = "ãƒ†ã‚¹ãƒˆ1" });
 
             Assert.True(result[0].ToString().Equals(TestData.SampleTestData[1].ToString()));
         }
@@ -61,7 +61,7 @@ namespace BrainChallenge.Common.Tests.Data.DataService.Implement
         [Test]
         public void insertTest1()
         {
-            var newData = new SampleEntity { Id = 4, Name = "ƒeƒXƒg4" };
+            var newData = new SampleEntity { Id = 4, Name = "ãƒ†ã‚¹ãƒˆ4" };
 
             TestData.SampleTestData.Add(newData);
 
