@@ -1,7 +1,7 @@
 ﻿using BrainChallenge.Common.Client.ClientModel;
 using BrainChallenge.Common.Data.Connection;
 
-namespace BrainChallenge.Common.Client.ClientService.InterFace
+namespace BrainChallenge.Common.Client.ClientService.Implement
 {
     public class ServiceIinitializer
     {

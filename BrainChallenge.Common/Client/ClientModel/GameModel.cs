@@ -26,7 +26,7 @@ namespace BrainChallenge.Common.Client.ClientModel
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
 
             sb.Append("[");
             sb.Append("GameId=" + GameId);

@@ -1,5 +1,5 @@
-﻿using BrainChallenge.Common.Client.ClientModel;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using BrainChallenge.Common.Client.ClientModel;
 
 namespace BrainChallenge.Common.Client.ClientService.InterFace
 {
