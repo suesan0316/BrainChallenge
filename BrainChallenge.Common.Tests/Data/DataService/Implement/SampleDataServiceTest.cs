@@ -2,6 +2,11 @@
 using BrainChallenge.Common.Data.DataService.Implement;
 using BrainChallenge.Common.Data.Entity.General;
 using System.Linq;
+using System.Runtime.CompilerServices;
+
+#if DEBUG
+[assembly: InternalsVisibleTo("BrainChallenge.Common")]
+#endif
 
 namespace BrainChallenge.Common.Tests.Data.DataService.Implement
 {

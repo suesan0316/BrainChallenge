@@ -64,7 +64,7 @@ namespace BrainChallenge.Common.Tests
             }
         }
 
-        public static void initDataBase()
+        public static void InitDataBase()
         {
             var dbPath = GetLocalFilePath("brainchallenge.db3");
             ConnectionProvider.dbPath = dbPath;
@@ -105,7 +105,7 @@ namespace BrainChallenge.Common.Tests
         private static string GetLocalFilePath(string filename)
         {
             //指定されたファイルのパスを取得します。なければ作成してそのパスを返却します
-            var path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             return System.IO.Path.Combine(path, filename);
         }
 

@@ -13,7 +13,7 @@ namespace BrainChallenge.Common.Tests
 
             AddTest(Assembly.GetExecutingAssembly());
 
-            TestData.initDataBase();
+            TestData.InitDataBase();
 
             base.OnCreate(bundle);
         }

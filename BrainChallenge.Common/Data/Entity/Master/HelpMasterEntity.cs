@@ -1,9 +1,5 @@
 ﻿using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace BrainChallenge.Common.Data.Entity.Master
 {
@@ -36,7 +32,7 @@ namespace BrainChallenge.Common.Data.Entity.Master
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
 
             sb.Append("[");
             sb.Append("GameId=" + GameId);

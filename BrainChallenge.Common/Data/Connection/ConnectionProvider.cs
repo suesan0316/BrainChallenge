@@ -2,7 +2,7 @@
 
 namespace BrainChallenge.Common.Data.Connection
 {
-    public class ConnectionProvider
+    internal class ConnectionProvider
     {
 
         public static string dbPath { get; set; }

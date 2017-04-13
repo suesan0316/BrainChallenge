@@ -23,7 +23,7 @@ namespace BrainChallenge.Common.Data.Entity.Master
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
 
             sb.Append("[");
             sb.Append("GameTypeId=" + GameTypeId);
