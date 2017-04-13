@@ -6,7 +6,7 @@ using BrainChallenge.Common.Data.Service.Interface;
 
 namespace BrainChallenge.Common.Data.DataService.Implement
 {
-    internal class SampleDataService : IGeneralDataService<SampleEntity>
+    public class SampleDataService : IGeneralDataService<SampleEntity>
     {
         public bool insert(SampleEntity t)
         {
