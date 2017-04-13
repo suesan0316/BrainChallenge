@@ -53,7 +53,7 @@ namespace BrainChallenge.Common.Tests
 
         private static void LoadingData()
         {
-            using (var con = ConnectionProvider.getConnection())
+            using (var con = ConnectionProvider.GetConnection())
             {
 
                 GameTypeMasterTestData.ForEach(data => con.Insert(data));
@@ -67,9 +67,9 @@ namespace BrainChallenge.Common.Tests
         public static void InitDataBase()
         {
             var dbPath = GetLocalFilePath("brainchallenge.db3");
-            ConnectionProvider.dbPath = dbPath;
+            ConnectionProvider.DbPath = dbPath;
 
-            using (var con = ConnectionProvider.getConnection())
+            using (var con = ConnectionProvider.GetConnection())
             {
 
                 try

@@ -5,11 +5,11 @@ namespace BrainChallenge.Common.Data.Connection
     public class ConnectionProvider
     {
 
-        public static string dbPath { get; set; }
+        public static string DbPath { get; set; }
 
-        public static SQLiteConnection getConnection()
+        public static SQLiteConnection GetConnection()
         {
-            return new SQLiteConnection(dbPath);
+            return new SQLiteConnection(DbPath);
         }
     }
 }

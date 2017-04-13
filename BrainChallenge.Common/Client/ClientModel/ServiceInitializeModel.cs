@@ -14,6 +14,6 @@ namespace BrainChallenge.Common.Client.ClientModel
         /// <summary>
         /// ローカルDBのパス
         /// </summary>
-        public string dbPath { get; set; }
+        public string DbPath { get; set; }
     }
 }

@@ -8,9 +8,9 @@ namespace BrainChallenge.Common.Data.DataService.Implement
 {
     public class SampleDataService : IGeneralDataService<SampleEntity>
     {
-        public bool insert(SampleEntity t)
+        public bool Insert(SampleEntity t)
         {
-            using (var con = ConnectionProvider.getConnection())
+            using (var con = ConnectionProvider.GetConnection())
             {
                 var result = con.Insert(t);
 
@@ -18,9 +18,9 @@ namespace BrainChallenge.Common.Data.DataService.Implement
             }
         }
 
-        public List<SampleEntity> select()
+        public List<SampleEntity> Select()
         {
-            using (var con = ConnectionProvider.getConnection())
+            using (var con = ConnectionProvider.GetConnection())
             {
                 var result = from record in con.Table<SampleEntity>() select record;
 
@@ -28,9 +28,9 @@ namespace BrainChallenge.Common.Data.DataService.Implement
             }
         }
 
-        public List<SampleEntity> select(SampleEntity t)
+        public List<SampleEntity> Select(SampleEntity t)
         {
-            using (var con = ConnectionProvider.getConnection())
+            using (var con = ConnectionProvider.GetConnection())
             {
                 var result = from record in con.Table<SampleEntity>() select record;
 

@@ -5,9 +5,9 @@ namespace BrainChallenge.Common.Client.ClientService.Implement
 {
     public class ServiceIinitializer
     {
-        public static void initialize(ServiceInitializeModel init)
+        public static void Initialize(ServiceInitializeModel init)
         {
-            ConnectionProvider.dbPath = init.dbPath;
+            ConnectionProvider.DbPath = init.DbPath;
         }
     }
 }

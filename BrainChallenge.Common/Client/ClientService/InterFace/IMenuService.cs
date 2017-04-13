@@ -5,6 +5,6 @@ namespace BrainChallenge.Common.Client.ClientService.InterFace
 {
     interface IMenuService
     {
-        Dictionary<string, List<GameModel>> getGameList();
+        Dictionary<string, List<GameModel>> GetGameList();
     }
 }

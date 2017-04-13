@@ -8,7 +8,7 @@ namespace BrainChallenge.Common.Data.Service.Interface
     /// <typeparam name="T">エンティティ</typeparam>
     interface IDataService<T>
     {
-        List<T> select();
-        List<T> select(T t);
+        List<T> Select();
+        List<T> Select(T t);
     }
 }

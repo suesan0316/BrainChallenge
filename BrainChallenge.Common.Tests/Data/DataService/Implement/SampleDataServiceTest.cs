@@ -14,11 +14,11 @@ namespace BrainChallenge.Common.Tests.Data.DataService.Implement
     class SampleDataServiceTest
     {
 
-        private SampleDataService serv;
+        private SampleDataService _serv;
 
         [SetUp]
         public void Setup() {
-            serv = new SampleDataService();
+            _serv = new SampleDataService();
         }
 
 
@@ -26,17 +26,15 @@ namespace BrainChallenge.Common.Tests.Data.DataService.Implement
         public void Tear() { }
 
         [Test]
-        public void selectAllTest1()
+        public void SelectAllTest1()
         {
-            var result = serv.select();
-
-            Assert.True(serv.select().Count == TestData.SampleTestData.Count);
+            Assert.True(_serv.Select().Count == TestData.SampleTestData.Count);
         }
 
         [Test]
-        public void selectAllTest2()
+        public void SelectAllTest2()
         {
-            var result = serv.select();
+            var result = _serv.Select();
 
             var selectString = "";
             var testDataString = "";
@@ -48,31 +46,31 @@ namespace BrainChallenge.Common.Tests.Data.DataService.Implement
         }
 
         [Test]
-        public void selectAndTest1()
+        public void SelectAndTest1()
         {
-            var result = serv.select(TestData.SampleTestData[0]);
+            var result = _serv.Select(TestData.SampleTestData[0]);
 
             Assert.True(result[0].ToString().Equals(TestData.SampleTestData[0].ToString()));
 
         }
         [Test]
-        public void selectAndTest2()
+        public void SelectAndTest2()
         {
-            var result = serv.select(new SampleEntity { Id = -1, Name = "テスト1" });
+            var result = _serv.Select(new SampleEntity { Id = -1, Name = "テスト1" });
 
             Assert.True(result[0].ToString().Equals(TestData.SampleTestData[1].ToString()));
         }
 
         [Test]
-        public void insertTest1()
+        public void InsertTest1()
         {
             var newData = new SampleEntity { Id = 4, Name = "テスト4" };
 
             TestData.SampleTestData.Add(newData);
 
-            var result = serv.insert(newData);
+            var result = _serv.Insert(newData);
 
-            var check = serv.select(newData).First().ToString();
+            var check = _serv.Select(newData).First().ToString();
 
             Assert.True(result && check.Equals(newData.ToString()));
         }
