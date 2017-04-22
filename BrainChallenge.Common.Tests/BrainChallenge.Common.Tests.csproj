@@ -76,6 +76,7 @@
     <Reference Include="Xamarin.Android.NUnitLite" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\DataService\Implement\GameMasterServiceTest.cs" />
     <Compile Include="Data\DataService\Implement\SampleDataServiceTest.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
