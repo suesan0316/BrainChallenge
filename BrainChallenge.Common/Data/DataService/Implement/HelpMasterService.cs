@@ -32,9 +32,9 @@ namespace BrainChallenge.Common.Data.DataService.Implement
                 if (t.HelpIndex != -1)
                     result = result.Where(data => data.HelpIndex == t.HelpIndex);
                 if (t.Explain != null)
-                    result = result.Where(data => data.Explain == t.Explain);
+                    result = result.Where(data => data.Explain.Equals(t.Explain));
                 if (t.Image != null)
-                    result = result.Where(data => data.Image == t.Image);
+                    result = result.Where(data => data.Image.Equals(t.Image));
 
                 return result.Count() != 0 ? result.ToList() : null;
             }
