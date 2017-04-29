@@ -30,11 +30,11 @@ namespace BrainChallenge.Common.Data.DataService.Implement
                 if (t.GameId != -1)
                     result = result.Where(data => data.GameId == t.GameId);
                 if (t.HelpIndex != -1)
-                    result = result.Where(data => data.HelpIndex.Equals(t.HelpIndex));
+                    result = result.Where(data => data.HelpIndex == t.HelpIndex);
                 if (t.Explain != null)
-                    result = result.Where(data => data.Explain.Equals(t.Explain));
+                    result = result.Where(data => data.Explain == t.Explain);
                 if (t.Image != null)
-                    result = result.Where(data => data.Image.Equals(t.Image));
+                    result = result.Where(data => data.Image == t.Image);
 
                 return result.Count() != 0 ? result.ToList() : null;
             }
