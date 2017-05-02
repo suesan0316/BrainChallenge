@@ -44,6 +44,28 @@ namespace BrainChallenge.Common.Tests
             GameMasterTestData.Add(new GameMasterEntity { GameId = 9, GameName = "問題解決能力ゲーム3", GameTypeId = 3, ScoreType = 0, TitleImage = "computational3_game_title", IconImage = "computational3_game_icon", Class = "ComputationalGame3Controller", GameTime = 3L });
             //GameMasterTestData.Add(new GameMasterEntity { GameId = 10, GameName = "問題解決能力ゲーム4", GameTypeId = 3, ScoreType = 1, TitleImage = "computational4_game_title", IconImage = "computational4_game_icon", Class = "ComputationalGame4Controller", GameTime = 4L });
 
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 0, Explain = "ゲームの説明1", HelpIndex = 0, Image = "help_image01" });
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 0, Explain = "ゲームの説明2", HelpIndex = 1, Image = "help_image02" });
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 0, Explain = "ゲームの説明3", HelpIndex = 2, Image = "help_image03" });
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 1, Explain = "ゲームの説明1", HelpIndex = 0, Image = "hlep_image01" });
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 1, Explain = "ゲームの説明2", HelpIndex = 1, Image = "help_image02" });
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 2, Explain = "ゲームの説明1", HelpIndex = 0, Image = "help_image01" });
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 2, Explain = "ゲームの説明2", HelpIndex = 1, Image = "help_image02" });
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明1", HelpIndex = 0, Image = "help_image01" });
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明2", HelpIndex = 1, Image = "help_image02" });
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明3", HelpIndex = 2, Image = "help_image03" });
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明4", HelpIndex = 3, Image = "help_image04" });
+            HelpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明5", HelpIndex = 4, Image = "help_image05" });
+
+            ScoreTestData.Add(new ScoreEntity { GameId = 0, Score = 100, RegistDate = DateTime.Now.AddDays(1) });
+            ScoreTestData.Add(new ScoreEntity { GameId = 0, Score = 200, RegistDate = DateTime.Now.AddDays(2) });
+            ScoreTestData.Add(new ScoreEntity { GameId = 0, Score = 300, RegistDate = DateTime.Now.AddDays(3) });
+            ScoreTestData.Add(new ScoreEntity { GameId = 1, Score = 100, RegistDate = DateTime.Now.AddDays(-1) });
+            ScoreTestData.Add(new ScoreEntity { GameId = 1, Score = 200, RegistDate = DateTime.Now.AddDays(-2) });
+            ScoreTestData.Add(new ScoreEntity { GameId = 1, Score = 300, RegistDate = DateTime.Now.AddDays(-3) });
+            ScoreTestData.Add(new ScoreEntity { GameId = 2, Score = 500, RegistDate = DateTime.Now.AddDays(4) });
+            ScoreTestData.Add(new ScoreEntity { GameId = 2, Score = 600, RegistDate = DateTime.Now.AddDays(5) });
+
             SampleTestData.Add(new SampleEntity { Id = 0, Name = "テスト0" });
             SampleTestData.Add(new SampleEntity { Id = 1, Name = "テスト1" });
             SampleTestData.Add(new SampleEntity { Id = 2, Name = "テスト2" });
@@ -58,6 +80,8 @@ namespace BrainChallenge.Common.Tests
 
                 GameTypeMasterTestData.ForEach(data => con.Insert(data));
                 GameMasterTestData.ForEach(data => con.Insert(data));
+                HelpMasterTestData.ForEach(data => con.Insert(data));
+                ScoreTestData.ForEach(data => con.Insert(data));
 
                 SampleTestData.ForEach(data => con.Insert(data));
 

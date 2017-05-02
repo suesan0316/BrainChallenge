@@ -76,8 +76,10 @@
     <Reference Include="Xamarin.Android.NUnitLite" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client\ClientService\Implement\MenuServiceTest.cs" />
     <Compile Include="Data\DataService\Implement\GameMasterServiceTest.cs" />
     <Compile Include="Data\DataService\Implement\GameTypeMasterServiceTest.cs" />
+    <Compile Include="Data\DataService\Implement\ScoreServiceTest.cs" />
     <Compile Include="Data\DataService\Implement\SampleDataServiceTest.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -105,9 +107,7 @@
       <Name>BrainChallenge.Common</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Client\ClientService\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
