@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:textAlignment="center">
+    <LinearLayout
+        style="@style/MenuTitleLinaer">
+        <TextView
+            style="@style/MenuTitle"
+            android:text="メニュー" />
+    </LinearLayout>
+    <ScrollView
+        style="@style/GameTypeListScroll">
+        <TableLayout
+            android:id="@+id/menuTable"
+            style="@style/GameTypeListTable" />     
+    </ScrollView>
+</LinearLayout>
