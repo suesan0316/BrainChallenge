@@ -799,44 +799,44 @@ namespace BrainChallenge.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0a003b
-			public const int abc_background_cache_hint_selector_material_dark = 2131361851;
-			
-			// aapt resource value: 0x7f0a003c
-			public const int abc_background_cache_hint_selector_material_light = 2131361852;
-			
-			// aapt resource value: 0x7f0a003d
-			public const int abc_btn_colored_borderless_text_material = 2131361853;
-			
-			// aapt resource value: 0x7f0a003e
-			public const int abc_btn_colored_text_material = 2131361854;
-			
-			// aapt resource value: 0x7f0a003f
-			public const int abc_color_highlight_material = 2131361855;
-			
 			// aapt resource value: 0x7f0a0040
-			public const int abc_hint_foreground_material_dark = 2131361856;
+			public const int abc_background_cache_hint_selector_material_dark = 2131361856;
 			
 			// aapt resource value: 0x7f0a0041
-			public const int abc_hint_foreground_material_light = 2131361857;
+			public const int abc_background_cache_hint_selector_material_light = 2131361857;
+			
+			// aapt resource value: 0x7f0a0042
+			public const int abc_btn_colored_borderless_text_material = 2131361858;
+			
+			// aapt resource value: 0x7f0a0043
+			public const int abc_btn_colored_text_material = 2131361859;
+			
+			// aapt resource value: 0x7f0a0044
+			public const int abc_color_highlight_material = 2131361860;
+			
+			// aapt resource value: 0x7f0a0045
+			public const int abc_hint_foreground_material_dark = 2131361861;
+			
+			// aapt resource value: 0x7f0a0046
+			public const int abc_hint_foreground_material_light = 2131361862;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int abc_input_method_navigation_guard = 2131361793;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int abc_primary_text_disable_only_material_dark = 2131361858;
+			// aapt resource value: 0x7f0a0047
+			public const int abc_primary_text_disable_only_material_dark = 2131361863;
 			
-			// aapt resource value: 0x7f0a0043
-			public const int abc_primary_text_disable_only_material_light = 2131361859;
+			// aapt resource value: 0x7f0a0048
+			public const int abc_primary_text_disable_only_material_light = 2131361864;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int abc_primary_text_material_dark = 2131361860;
+			// aapt resource value: 0x7f0a0049
+			public const int abc_primary_text_material_dark = 2131361865;
 			
-			// aapt resource value: 0x7f0a0045
-			public const int abc_primary_text_material_light = 2131361861;
+			// aapt resource value: 0x7f0a004a
+			public const int abc_primary_text_material_light = 2131361866;
 			
-			// aapt resource value: 0x7f0a0046
-			public const int abc_search_url_text = 2131361862;
+			// aapt resource value: 0x7f0a004b
+			public const int abc_search_url_text = 2131361867;
 			
 			// aapt resource value: 0x7f0a0002
 			public const int abc_search_url_text_normal = 2131361794;
@@ -847,32 +847,32 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0a0004
 			public const int abc_search_url_text_selected = 2131361796;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int abc_secondary_text_material_dark = 2131361863;
-			
-			// aapt resource value: 0x7f0a0048
-			public const int abc_secondary_text_material_light = 2131361864;
-			
-			// aapt resource value: 0x7f0a0049
-			public const int abc_tint_btn_checkable = 2131361865;
-			
-			// aapt resource value: 0x7f0a004a
-			public const int abc_tint_default = 2131361866;
-			
-			// aapt resource value: 0x7f0a004b
-			public const int abc_tint_edittext = 2131361867;
-			
 			// aapt resource value: 0x7f0a004c
-			public const int abc_tint_seek_thumb = 2131361868;
+			public const int abc_secondary_text_material_dark = 2131361868;
 			
 			// aapt resource value: 0x7f0a004d
-			public const int abc_tint_spinner = 2131361869;
+			public const int abc_secondary_text_material_light = 2131361869;
 			
 			// aapt resource value: 0x7f0a004e
-			public const int abc_tint_switch_thumb = 2131361870;
+			public const int abc_tint_btn_checkable = 2131361870;
 			
 			// aapt resource value: 0x7f0a004f
-			public const int abc_tint_switch_track = 2131361871;
+			public const int abc_tint_default = 2131361871;
+			
+			// aapt resource value: 0x7f0a0050
+			public const int abc_tint_edittext = 2131361872;
+			
+			// aapt resource value: 0x7f0a0051
+			public const int abc_tint_seek_thumb = 2131361873;
+			
+			// aapt resource value: 0x7f0a0052
+			public const int abc_tint_spinner = 2131361874;
+			
+			// aapt resource value: 0x7f0a0053
+			public const int abc_tint_switch_thumb = 2131361875;
+			
+			// aapt resource value: 0x7f0a0054
+			public const int abc_tint_switch_track = 2131361876;
 			
 			// aapt resource value: 0x7f0a0005
 			public const int accent_material_dark = 2131361797;
@@ -976,6 +976,21 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0a0026
 			public const int material_grey_900 = 2131361830;
 			
+			// aapt resource value: 0x7f0a003b
+			public const int my_blue = 2131361851;
+			
+			// aapt resource value: 0x7f0a003f
+			public const int my_gray = 2131361855;
+			
+			// aapt resource value: 0x7f0a003d
+			public const int my_green = 2131361853;
+			
+			// aapt resource value: 0x7f0a003c
+			public const int my_min_blue = 2131361852;
+			
+			// aapt resource value: 0x7f0a003e
+			public const int my_purple = 2131361854;
+			
 			// aapt resource value: 0x7f0a0000
 			public const int notification_action_color_filter = 2131361792;
 			
@@ -1033,11 +1048,11 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0a0038
 			public const int switch_thumb_disabled_material_light = 2131361848;
 			
-			// aapt resource value: 0x7f0a0050
-			public const int switch_thumb_material_dark = 2131361872;
+			// aapt resource value: 0x7f0a0055
+			public const int switch_thumb_material_dark = 2131361877;
 			
-			// aapt resource value: 0x7f0a0051
-			public const int switch_thumb_material_light = 2131361873;
+			// aapt resource value: 0x7f0a0056
+			public const int switch_thumb_material_light = 2131361878;
 			
 			// aapt resource value: 0x7f0a0039
 			public const int switch_thumb_normal_material_dark = 2131361849;
@@ -1615,40 +1630,82 @@ namespace BrainChallenge.Droid
 			public const int abc_vector_test = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int notification_action_background = 2130837587;
+			public const int border = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int notification_bg = 2130837588;
+			public const int detective_game_dog = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int notification_bg_low = 2130837589;
+			public const int detective_game_failed = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int notification_bg_low_normal = 2130837590;
+			public const int detective_game_house1 = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int notification_bg_low_pressed = 2130837591;
+			public const int detective_game_house2 = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int notification_bg_normal = 2130837592;
+			public const int detective_game_icon = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int notification_bg_normal_pressed = 2130837593;
+			public const int detective_game_in_title = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int notification_icon_background = 2130837594;
-			
-			// aapt resource value: 0x7f02005d
-			public const int notification_template_icon_bg = 2130837597;
-			
-			// aapt resource value: 0x7f02005e
-			public const int notification_template_icon_low_bg = 2130837598;
+			public const int detective_game_no_image = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int notification_tile_bg = 2130837595;
+			public const int detective_game_title = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int notify_panel_notification_icon_bg = 2130837596;
+			public const int detective_game_tree = 2130837596;
+			
+			// aapt resource value: 0x7f02005d
+			public const int Icon = 2130837597;
+			
+			// aapt resource value: 0x7f02005e
+			public const int noopen = 2130837598;
+			
+			// aapt resource value: 0x7f02005f
+			public const int notification_action_background = 2130837599;
+			
+			// aapt resource value: 0x7f020060
+			public const int notification_bg = 2130837600;
+			
+			// aapt resource value: 0x7f020061
+			public const int notification_bg_low = 2130837601;
+			
+			// aapt resource value: 0x7f020062
+			public const int notification_bg_low_normal = 2130837602;
+			
+			// aapt resource value: 0x7f020063
+			public const int notification_bg_low_pressed = 2130837603;
+			
+			// aapt resource value: 0x7f020064
+			public const int notification_bg_normal = 2130837604;
+			
+			// aapt resource value: 0x7f020065
+			public const int notification_bg_normal_pressed = 2130837605;
+			
+			// aapt resource value: 0x7f020066
+			public const int notification_icon_background = 2130837606;
+			
+			// aapt resource value: 0x7f02006b
+			public const int notification_template_icon_bg = 2130837611;
+			
+			// aapt resource value: 0x7f02006c
+			public const int notification_template_icon_low_bg = 2130837612;
+			
+			// aapt resource value: 0x7f020067
+			public const int notification_tile_bg = 2130837607;
+			
+			// aapt resource value: 0x7f020068
+			public const int notify_panel_notification_icon_bg = 2130837608;
+			
+			// aapt resource value: 0x7f020069
+			public const int radius_blue = 2130837609;
+			
+			// aapt resource value: 0x7f02006a
+			public const int radius_gray = 2130837610;
 			
 			static Drawable()
 			{
@@ -1663,8 +1720,8 @@ namespace BrainChallenge.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0059
-			public const int action0 = 2131427417;
+			// aapt resource value: 0x7f0b005a
+			public const int action0 = 2131427418;
 			
 			// aapt resource value: 0x7f0b0047
 			public const int action_bar = 2131427399;
@@ -1687,17 +1744,17 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b0024
 			public const int action_bar_title = 2131427364;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int action_container = 2131427414;
+			// aapt resource value: 0x7f0b0057
+			public const int action_container = 2131427415;
 			
 			// aapt resource value: 0x7f0b0048
 			public const int action_context_bar = 2131427400;
 			
-			// aapt resource value: 0x7f0b005d
-			public const int action_divider = 2131427421;
+			// aapt resource value: 0x7f0b005e
+			public const int action_divider = 2131427422;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int action_image = 2131427415;
+			// aapt resource value: 0x7f0b0058
+			public const int action_image = 2131427416;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1714,11 +1771,11 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b0026
 			public const int action_mode_close_button = 2131427366;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int action_text = 2131427416;
+			// aapt resource value: 0x7f0b0059
+			public const int action_text = 2131427417;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int actions = 2131427430;
+			// aapt resource value: 0x7f0b0067
+			public const int actions = 2131427431;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int activity_chooser_view_content = 2131427367;
@@ -1741,14 +1798,14 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b002e
 			public const int buttonPanel = 2131427374;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int cancel_action = 2131427418;
+			// aapt resource value: 0x7f0b005b
+			public const int cancel_action = 2131427419;
 			
 			// aapt resource value: 0x7f0b003e
 			public const int checkbox = 2131427390;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int chronometer = 2131427426;
+			// aapt resource value: 0x7f0b0063
+			public const int chronometer = 2131427427;
 			
 			// aapt resource value: 0x7f0b001e
 			public const int collapseActionView = 2131427358;
@@ -1777,8 +1834,8 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b001b
 			public const int end = 2131427355;
 			
-			// aapt resource value: 0x7f0b006c
-			public const int end_padder = 2131427436;
+			// aapt resource value: 0x7f0b006d
+			public const int end_padder = 2131427437;
 			
 			// aapt resource value: 0x7f0b0028
 			public const int expand_activities_button = 2131427368;
@@ -1795,8 +1852,8 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b002c
 			public const int icon = 2131427372;
 			
-			// aapt resource value: 0x7f0b0067
-			public const int icon_group = 2131427431;
+			// aapt resource value: 0x7f0b0068
+			public const int icon_group = 2131427432;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int ifRoom = 2131427359;
@@ -1804,14 +1861,14 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b0029
 			public const int image = 2131427369;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int info = 2131427427;
+			// aapt resource value: 0x7f0b0064
+			public const int info = 2131427428;
 			
-			// aapt resource value: 0x7f0b0068
-			public const int line1 = 2131427432;
+			// aapt resource value: 0x7f0b0069
+			public const int line1 = 2131427433;
 			
-			// aapt resource value: 0x7f0b006a
-			public const int line3 = 2131427434;
+			// aapt resource value: 0x7f0b006b
+			public const int line3 = 2131427435;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
@@ -1819,8 +1876,11 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b002b
 			public const int list_item = 2131427371;
 			
-			// aapt resource value: 0x7f0b005c
-			public const int media_actions = 2131427420;
+			// aapt resource value: 0x7f0b005d
+			public const int media_actions = 2131427421;
+			
+			// aapt resource value: 0x7f0b0056
+			public const int menuTable = 2131427414;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int middle = 2131427356;
@@ -1837,14 +1897,14 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b000a
 			public const int normal = 2131427338;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int notification_background = 2131427429;
+			// aapt resource value: 0x7f0b0066
+			public const int notification_background = 2131427430;
+			
+			// aapt resource value: 0x7f0b0060
+			public const int notification_main_column = 2131427424;
 			
 			// aapt resource value: 0x7f0b005f
-			public const int notification_main_column = 2131427423;
-			
-			// aapt resource value: 0x7f0b005e
-			public const int notification_main_column_container = 2131427422;
+			public const int notification_main_column_container = 2131427423;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int parentPanel = 2131427376;
@@ -1858,11 +1918,11 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b0040
 			public const int radio = 2131427392;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int right_icon = 2131427428;
+			// aapt resource value: 0x7f0b0065
+			public const int right_icon = 2131427429;
 			
-			// aapt resource value: 0x7f0b0060
-			public const int right_side = 2131427424;
+			// aapt resource value: 0x7f0b0061
+			public const int right_side = 2131427425;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int screen = 2131427349;
@@ -1936,8 +1996,8 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b0018
 			public const int src_over = 2131427352;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int status_bar_latest_event_content = 2131427419;
+			// aapt resource value: 0x7f0b005c
+			public const int status_bar_latest_event_content = 2131427420;
 			
 			// aapt resource value: 0x7f0b0041
 			public const int submenuarrow = 2131427393;
@@ -1948,11 +2008,11 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b000b
 			public const int tabMode = 2131427339;
 			
-			// aapt resource value: 0x7f0b006b
-			public const int text = 2131427435;
+			// aapt resource value: 0x7f0b006c
+			public const int text = 2131427436;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int text2 = 2131427433;
+			// aapt resource value: 0x7f0b006a
+			public const int text2 = 2131427434;
 			
 			// aapt resource value: 0x7f0b0035
 			public const int textSpacerNoButtons = 2131427381;
@@ -1960,8 +2020,8 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f0b0034
 			public const int textSpacerNoTitle = 2131427380;
 			
-			// aapt resource value: 0x7f0b0061
-			public const int time = 2131427425;
+			// aapt resource value: 0x7f0b0062
+			public const int time = 2131427426;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int title = 2131427373;
@@ -2110,61 +2170,64 @@ namespace BrainChallenge.Droid
 			public const int abc_select_dialog_material = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int notification_action = 2130968603;
+			public const int Menu = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int notification_action_tombstone = 2130968604;
+			public const int notification_action = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int notification_media_action = 2130968605;
+			public const int notification_action_tombstone = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int notification_media_cancel_action = 2130968606;
+			public const int notification_media_action = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int notification_template_big_media = 2130968607;
+			public const int notification_media_cancel_action = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int notification_template_big_media_custom = 2130968608;
+			public const int notification_template_big_media = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int notification_template_big_media_narrow = 2130968609;
+			public const int notification_template_big_media_custom = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int notification_template_big_media_narrow_custom = 2130968610;
+			public const int notification_template_big_media_narrow = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int notification_template_custom_big = 2130968611;
+			public const int notification_template_big_media_narrow_custom = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int notification_template_icon_group = 2130968612;
+			public const int notification_template_custom_big = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int notification_template_lines_media = 2130968613;
+			public const int notification_template_icon_group = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int notification_template_media = 2130968614;
+			public const int notification_template_lines_media = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int notification_template_media_custom = 2130968615;
+			public const int notification_template_media = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int notification_template_part_chronometer = 2130968616;
+			public const int notification_template_media_custom = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int notification_template_part_time = 2130968617;
+			public const int notification_template_part_chronometer = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int select_dialog_item_material = 2130968618;
+			public const int notification_template_part_time = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int select_dialog_multichoice_material = 2130968619;
+			public const int select_dialog_item_material = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int select_dialog_singlechoice_material = 2130968620;
+			public const int select_dialog_multichoice_material = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int support_simple_spinner_dropdown_item = 2130968621;
+			public const int select_dialog_singlechoice_material = 2130968621;
+			
+			// aapt resource value: 0x7f04002e
+			public const int support_simple_spinner_dropdown_item = 2130968622;
 			
 			static Layout()
 			{
@@ -2781,6 +2844,90 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f080084
 			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131230852;
 			
+			// aapt resource value: 0x7f08015f
+			public const int BasicTheme = 2131231071;
+			
+			// aapt resource value: 0x7f080166
+			public const int DetectiveGameInTitleImage = 2131231078;
+			
+			// aapt resource value: 0x7f080165
+			public const int DetectiveGameInTitleLinear = 2131231077;
+			
+			// aapt resource value: 0x7f080162
+			public const int DetectiveGameScore = 2131231074;
+			
+			// aapt resource value: 0x7f080161
+			public const int DetectiveGameScoreLinaer = 2131231073;
+			
+			// aapt resource value: 0x7f080164
+			public const int DetectiveGameState = 2131231076;
+			
+			// aapt resource value: 0x7f080163
+			public const int DetectiveGameStateLinaer = 2131231075;
+			
+			// aapt resource value: 0x7f080167
+			public const int DetectiveGameTargetImage = 2131231079;
+			
+			// aapt resource value: 0x7f080168
+			public const int DetectiveGameTile = 2131231080;
+			
+			// aapt resource value: 0x7f080169
+			public const int DetectiveTileButton = 2131231081;
+			
+			// aapt resource value: 0x7f080182
+			public const int GameButton = 2131231106;
+			
+			// aapt resource value: 0x7f080181
+			public const int GameLinaer = 2131231105;
+			
+			// aapt resource value: 0x7f080180
+			public const int GameListLinaer = 2131231104;
+			
+			// aapt resource value: 0x7f08017f
+			public const int GameListScroll = 2131231103;
+			
+			// aapt resource value: 0x7f08017d
+			public const int GameListTitleLinear = 2131231101;
+			
+			// aapt resource value: 0x7f080175
+			public const int GameResultScore = 2131231093;
+			
+			// aapt resource value: 0x7f080174
+			public const int GameResultScoreLinaer = 2131231092;
+			
+			// aapt resource value: 0x7f080183
+			public const int GameTitle = 2131231107;
+			
+			// aapt resource value: 0x7f08017b
+			public const int GameTypeListScroll = 2131231099;
+			
+			// aapt resource value: 0x7f08017c
+			public const int GameTypeListTable = 2131231100;
+			
+			// aapt resource value: 0x7f08017e
+			public const int GameTypeListTitle = 2131231102;
+			
+			// aapt resource value: 0x7f080178
+			public const int HelpGame = 2131231096;
+			
+			// aapt resource value: 0x7f080177
+			public const int HelpGameLinear = 2131231095;
+			
+			// aapt resource value: 0x7f080160
+			public const int ImageButtonBasic = 2131231072;
+			
+			// aapt resource value: 0x7f08017a
+			public const int MenuTitle = 2131231098;
+			
+			// aapt resource value: 0x7f080179
+			public const int MenuTitleLinaer = 2131231097;
+			
+			// aapt resource value: 0x7f080184
+			public const int NoOpenGameButton = 2131231108;
+			
+			// aapt resource value: 0x7f080185
+			public const int NoOpenGameTitle = 2131231109;
+			
 			// aapt resource value: 0x7f08001e
 			public const int Platform_AppCompat = 2131230750;
 			
@@ -2864,6 +3011,39 @@ namespace BrainChallenge.Droid
 			
 			// aapt resource value: 0x7f08003e
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131230782;
+			
+			// aapt resource value: 0x7f080176
+			public const int SelectGameAgainButton = 2131231094;
+			
+			// aapt resource value: 0x7f08016f
+			public const int SelectGameButtonLinear = 2131231087;
+			
+			// aapt resource value: 0x7f080170
+			public const int SelectGameHelpButton = 2131231088;
+			
+			// aapt resource value: 0x7f08016c
+			public const int SelectGameImage = 2131231084;
+			
+			// aapt resource value: 0x7f08016b
+			public const int SelectGameImageLinear = 2131231083;
+			
+			// aapt resource value: 0x7f080172
+			public const int SelectGameOptionButtonLinear = 2131231090;
+			
+			// aapt resource value: 0x7f080173
+			public const int SelectGameReturnButton = 2131231091;
+			
+			// aapt resource value: 0x7f08016e
+			public const int SelectGameScore = 2131231086;
+			
+			// aapt resource value: 0x7f08016d
+			public const int SelectGameScoreExplain = 2131231085;
+			
+			// aapt resource value: 0x7f080171
+			public const int SelectGameStartButton = 2131231089;
+			
+			// aapt resource value: 0x7f08016a
+			public const int SelectGameTitle = 2131231082;
 			
 			// aapt resource value: 0x7f0800ce
 			public const int TextAppearance_AppCompat = 2131230926;
