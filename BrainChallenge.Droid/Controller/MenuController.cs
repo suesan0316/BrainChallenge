@@ -30,6 +30,8 @@ namespace BrainChallenge.Droid.Controller
             foreach (var type in gameModels)
             {
 
+                int min = 3;
+
                 var GameListTitleLinear = Util.GenerateView<LinearLayout>(this, "GameListTitleLinear");
                 var GameTypeListTitle = Util.GenerateView<TextView>(this, "GameTypeListTitle");
 
@@ -50,6 +52,23 @@ namespace BrainChallenge.Droid.Controller
 
                     var GameTitle = Util.GenerateView<TextView>(this, "GameTitle");
                     GameTitle.Text = gameModel.GameName;
+
+                    GameLinaer.AddView(GameButton);
+                    GameLinaer.AddView(GameTitle);
+
+                    GameListLinaer.AddView(GameLinaer);
+
+                    min--;
+                }
+
+                for (int i = 0; i < min; i++)
+                {
+                    var GameLinaer = Util.GenerateView<LinearLayout>(this, "GameLinaer");
+
+                    var GameButton = Util.GenerateView<ImageButton>(this, "NoOpenGameButton");
+                    GameButton.SetBackgroundResource(Resource.Drawable.noopen);
+
+                    var GameTitle = Util.GenerateView<TextView>(this, "NoOpenGameTitle");
 
                     GameLinaer.AddView(GameButton);
                     GameLinaer.AddView(GameTitle);
