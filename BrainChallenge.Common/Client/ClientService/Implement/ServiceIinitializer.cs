@@ -13,6 +13,7 @@ namespace BrainChallenge.Common.Client.ClientService.Implement
         public static void Initialize(ServiceInitializeModel init)
         {
             ConnectionProvider.DbPath = init.DbPath;
+            DbInitialize();
         }
 
         private static void DbInitialize()
