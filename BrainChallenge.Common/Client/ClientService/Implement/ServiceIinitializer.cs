@@ -184,6 +184,19 @@ namespace BrainChallenge.Common.Client.ClientService.Implement
                 scoreTestData.Add(new ScoreEntity { GameId = 2, Score = 500, RegistDate = DateTime.Now.AddDays(4) });
                 scoreTestData.Add(new ScoreEntity { GameId = 2, Score = 600, RegistDate = DateTime.Now.AddDays(5) });
 
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 0, Explain = "ゲームの説明1", HelpIndex = 0, Image = "help_image01" });
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 0, Explain = "ゲームの説明2", HelpIndex = 1, Image = "help_image02" });
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 0, Explain = "ゲームの説明3", HelpIndex = 2, Image = "help_image03" });
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 1, Explain = "ゲームの説明1", HelpIndex = 0, Image = "hlep_image01" });
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 1, Explain = "ゲームの説明2", HelpIndex = 1, Image = "help_image02" });
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 2, Explain = "ゲームの説明1", HelpIndex = 0, Image = "help_image01" });
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 2, Explain = "ゲームの説明2", HelpIndex = 1, Image = "help_image02" });
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明1", HelpIndex = 0, Image = "help_image01" });
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明2", HelpIndex = 1, Image = "help_image02" });
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明3", HelpIndex = 2, Image = "help_image03" });
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明4", HelpIndex = 3, Image = "help_image04" });
+                helpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明5", HelpIndex = 4, Image = "help_image05" });
+
                 gameTypeMasterTestData.ForEach(data => con.Insert(data));
                 gameMasterTestData.ForEach(data => con.Insert(data));
                 helpMasterTestData.ForEach(data => con.Insert(data));

@@ -91,7 +91,7 @@ namespace BrainChallenge.Droid.Controller
             }
         }
 
-        private string GetLocalFilePath(string filename)
+        private static string GetLocalFilePath(string filename)
         {
             //指定されたファイルのパスを取得します。なければ作成してそのパスを返却します
             var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
