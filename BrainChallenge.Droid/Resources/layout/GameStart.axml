@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <TextView
+    style="@style/SelectGameTitle"
+    android:id="@+id/selectGameTitle" />
+  <LinearLayout
+    style="@style/SelectGameImageLinear">
+    <ImageView
+      style="@style/SelectGameImage"
+      android:id="@+id/gameImage" />
+  </LinearLayout>
+  <TextView
+    style="@style/SelectGameScoreExplain" />
+  <TextView
+    style="@style/SelectGameScore"
+    android:id="@+id/gameScore" />
+  <LinearLayout
+    style="@style/SelectGameButtonLinear">
+    <Button
+      style="@style/SelectGameHelpButton"
+      android:id="@+id/helpButton" />
+    <Button
+      style="@style/SelectGameStartButton"
+      android:id="@+id/gameStartButton" />
+  </LinearLayout>
+  <LinearLayout
+    style="@style/SelectGameOptionButtonLinear">
+    <Button
+      style="@style/SelectGameReturnButton"
+      android:id="@+id/returnButton" />
+  </LinearLayout>
+</LinearLayout>

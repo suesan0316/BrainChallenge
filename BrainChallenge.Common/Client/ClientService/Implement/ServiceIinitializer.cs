@@ -175,6 +175,15 @@ namespace BrainChallenge.Common.Client.ClientService.Implement
                     GameTime = 3L
                 });
 
+                scoreTestData.Add(new ScoreEntity { GameId = 0, Score = 100, RegistDate = DateTime.Now.AddDays(1) });
+                scoreTestData.Add(new ScoreEntity { GameId = 0, Score = 200, RegistDate = DateTime.Now.AddDays(2) });
+                scoreTestData.Add(new ScoreEntity { GameId = 0, Score = 30000, RegistDate = DateTime.Now.AddDays(3) });
+                scoreTestData.Add(new ScoreEntity { GameId = 1, Score = 100, RegistDate = DateTime.Now.AddDays(-1) });
+                scoreTestData.Add(new ScoreEntity { GameId = 1, Score = 200, RegistDate = DateTime.Now.AddDays(-2) });
+                scoreTestData.Add(new ScoreEntity { GameId = 1, Score = 300, RegistDate = DateTime.Now.AddDays(-3) });
+                scoreTestData.Add(new ScoreEntity { GameId = 2, Score = 500, RegistDate = DateTime.Now.AddDays(4) });
+                scoreTestData.Add(new ScoreEntity { GameId = 2, Score = 600, RegistDate = DateTime.Now.AddDays(5) });
+
                 gameTypeMasterTestData.ForEach(data => con.Insert(data));
                 gameMasterTestData.ForEach(data => con.Insert(data));
                 helpMasterTestData.ForEach(data => con.Insert(data));

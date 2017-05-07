@@ -31,6 +31,7 @@
     <Compile Include="Client\ClientModel\GameDetailModel.cs" />
     <Compile Include="Client\ClientModel\GameModel.cs" />
     <Compile Include="Client\ClientModel\ServiceInitializeModel.cs" />
+    <Compile Include="Client\ClientService\Implement\GameStartService.cs" />
     <Compile Include="Client\ClientService\Implement\MenuService.cs" />
     <Compile Include="Client\ClientService\Implement\ServiceIinitializer.cs" />
     <Compile Include="Client\ClientService\InterFace\IGameStartService.cs" />
