@@ -1,13 +1,9 @@
-using System;
-using System.Xml;
 using Android.App;
-using Android.Content;
-using Android.Content.Res;
 using Android.OS;
-using Android.Support.V4.View;
-using Android.Util;
-using Android.Views;
 using Android.Widget;
+using BrainChallenge.Common.Client.ClientModel;
+using BrainChallenge.Common.Client.ClientService.Implement;
+using Environment = System.Environment;
 
 namespace BrainChallenge.Droid.Controller
 {
@@ -16,41 +12,63 @@ namespace BrainChallenge.Droid.Controller
     {
         private TableLayout _menuTable;
 
+        private readonly MenuService _service = new MenuService();
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             SetTheme(AppConst.targetTheme);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Menu);
 
+            ServiceIinitializer.Initialize(new ServiceInitializeModel {DbPath = GetLocalFilePath("brainchallenge.db3") });
+
             _menuTable = FindViewById<TableLayout>(Resource.Id.menuTable);
 
-            var GameListTitleLinear = Util.GenerateView<LinearLayout>(this, "GameListTitleLinear");
-            var GameTypeListTitle = Util.GenerateView<TextView>(this, "GameTypeListTitle");
-            
-            GameTypeListTitle.Text = "記憶力";
-            GameListTitleLinear.AddView(GameTypeListTitle);
-            _menuTable.AddView(GameListTitleLinear);
 
-            var GameListScroll = Util.GenerateView<HorizontalScrollView>(this, "GameListScroll");
+            var gameModels = _service.GetGameList();
 
-            var GameListLinaer = Util.GenerateView<LinearLayout>(this, "GameListLinaer");
-            var GameLinaer = Util.GenerateView<LinearLayout>(this, "GameLinaer");
+            foreach (var type in gameModels)
+            {
 
-            var GameButton = Util.GenerateView<ImageButton>(this, "GameButton");
-            GameButton.SetBackgroundResource(Resource.Drawable.detective_game_icon);
+                var GameListTitleLinear = Util.GenerateView<LinearLayout>(this, "GameListTitleLinear");
+                var GameTypeListTitle = Util.GenerateView<TextView>(this, "GameTypeListTitle");
 
-            var GameTitle = Util.GenerateView<TextView>(this, "GameTitle");
-            GameTitle.Text = "迷子を探せ!!";
+                GameTypeListTitle.Text = type.Key;
+                GameListTitleLinear.AddView(GameTypeListTitle);
+                _menuTable.AddView(GameListTitleLinear);
 
-            GameLinaer.AddView(GameButton);
-            GameLinaer.AddView(GameTitle);
+                var GameListScroll = Util.GenerateView<HorizontalScrollView>(this, "GameListScroll");
 
-            GameListLinaer.AddView(GameLinaer);
+                var GameListLinaer = Util.GenerateView<LinearLayout>(this, "GameListLinaer");
 
-            GameListScroll.AddView(GameListLinaer);
+                foreach (var gameModel in type.Value)
+                {
+                    var GameLinaer = Util.GenerateView<LinearLayout>(this, "GameLinaer");
 
-            _menuTable.AddView(GameListScroll);
+                    var GameButton = Util.GenerateView<ImageButton>(this, "GameButton");
+                    GameButton.SetBackgroundResource((int)typeof(Resource.Drawable).GetField(gameModel.Icon).GetValue(null));
 
+                    var GameTitle = Util.GenerateView<TextView>(this, "GameTitle");
+                    GameTitle.Text = gameModel.GameName;
+
+                    GameLinaer.AddView(GameButton);
+                    GameLinaer.AddView(GameTitle);
+
+                    GameListLinaer.AddView(GameLinaer);
+                }
+
+                GameListScroll.AddView(GameListLinaer);
+
+                _menuTable.AddView(GameListScroll);
+            }
         }
+
+        private  string GetLocalFilePath(string filename)
+        {
+            //指定されたファイルのパスを取得します。なければ作成してそのパスを返却します
+            var path = System.Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            return System.IO.Path.Combine(path, filename);
+        }
+
     }
 }

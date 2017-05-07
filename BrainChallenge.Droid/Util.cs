@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Xml;
 using System.Xml.Linq;
 using Android.Content;
 using Android.Views;
@@ -11,84 +9,67 @@ namespace BrainChallenge.Droid
 {
     internal class Util
     {
-        public  static T GenerateView<T>(Context context, string styleName) where T : View
+        public static T GenerateView<T>(Context context, string styleName) where T : View
         {
-            var styleId = (int)typeof(Resource.Style).GetField(styleName).GetValue(null);
+            var styleId = (int) typeof(Resource.Style).GetField(styleName).GetValue(null);
 
             var viewType = typeof(T);
-            var args = new object[] { context, null, styleId, styleId };
-            //var args = new object[] { new ContextThemeWrapper(context, styleId) };
-            var view = (T)Activator.CreateInstance(viewType, args);
+            var args = new object[] {context, null, styleId, styleId};
+            var view = (T) Activator.CreateInstance(viewType, args);
 
             var xml = XDocument.Load(context.Assets.Open("Styles.xml"));
-
             var styles = xml.Descendants("style");
+            var stylesResult = from n in styles let xAttribute = n.Attribute("name") where xAttribute != null && xAttribute.Value.Equals(styleName) select n;
+            var items = stylesResult.Descendants("item");
+            var itemsResult = from n in items select n;
+            var styleValues = itemsResult.ToList();
 
-            var result = from n in styles where n.Attribute("name").Value.Equals(styleName) select n;
-
-            var items = result.Descendants("item");
-
-            var result2 = from n in items select n;
-
-            var list = result2.ToList();
-
-            var layout_height = -1;
-            var layout_width = -1;
-            var layout_marginBottom = 0;
-            var layout_marginLeft = 0;
-            var layout_marginRight = 0;
-            var layout_marginTop = 0;
+            var layoutHeight = -1;
+            var layoutWidth = -1;
+            var layoutMarginBottom = 0;
+            var layoutMarginLeft = 0;
+            var layoutMarginRight = 0;
+            var layoutMarginTop = 0;
             var paddingLeft = 0;
             var paddingTop = 0;
             var paddingBottom = 0;
             var paddingRight = 0;
 
-            foreach (var val in list)
+            foreach (var val in styleValues)
             {
                 var name = val.Attribute("name").Value;
 
                 if (name.Equals("android:layout_height"))
                 {
-                    if (!int.TryParse(val.Value, out layout_height))
-                    {
+                    if (!int.TryParse(val.Value, out layoutHeight))
                         if (val.Value.Equals("wrap_content"))
-                        {
-                            layout_height = -2;
-                        }
+                            layoutHeight = -2;
                         else
-                        {
-                            layout_height = -1;
-                        }
-                    }
-                }else if (name.Equals("android:layout_width"))
+                            layoutHeight = -1;
+                }
+                else if (name.Equals("android:layout_width"))
                 {
-                    if (!int.TryParse(val.Value, out layout_width))
-                    {
+                    if (!int.TryParse(val.Value, out layoutWidth))
                         if (val.Value.Equals("wrap_content"))
-                        {
-                            layout_width = -2;
-                        }
+                            layoutWidth = -2;
                         else
-                        {
-                            layout_width = -1;
-                        }
-
-                      }
-                }else if (name.Equals("android:layout_marginBottom"))
+                            layoutWidth = -1;
+                }
+                else if (name.Equals("android:layout_marginBottom"))
                 {
-                    int.TryParse(val.Value, out layout_marginBottom);
+                    int.TryParse(val.Value, out layoutMarginBottom);
                 }
                 else if (name.Equals("android:layout_marginLeft"))
                 {
-                    int.TryParse(val.Value, out layout_marginLeft);
+                    int.TryParse(val.Value, out layoutMarginLeft);
                 }
                 else if (name.Equals("android:layout_marginRight"))
                 {
-                    int.TryParse(val.Value, out layout_marginRight);
+                    int.TryParse(val.Value, out layoutMarginRight);
                 }
                 else if (name.Equals("android:layout_marginTop"))
                 {
-                    int.TryParse(val.Value, out layout_marginTop);
+                    int.TryParse(val.Value, out layoutMarginTop);
                 }
                 else if (name.Equals("android:paddingLeft"))
                 {
@@ -108,13 +89,20 @@ namespace BrainChallenge.Droid
                 }
             }
 
-            var layoutParams = new LinearLayout.LayoutParams(layout_width, layout_height);
-            
+            var layoutParams = new LinearLayout.LayoutParams(layoutWidth, layoutHeight);
+
             view.SetPadding(paddingLeft, paddingTop, paddingRight, paddingBottom);
-            layoutParams.SetMargins(layout_marginLeft, layout_marginTop, layout_marginRight, layout_marginBottom);
-            
+            layoutParams.SetMargins(layoutMarginLeft, layoutMarginTop, layoutMarginRight, layoutMarginBottom);
+
             view.LayoutParameters = layoutParams;
             return view;
         }
+
+        /*public static string GetLocalFilePath(string filename)
+        {
+            //指定されたファイルのパスを取得します。なければ作成してそのパスを返却します
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            return System.IO.Path.Combine(path, filename);
+        }*/
     }
 }
