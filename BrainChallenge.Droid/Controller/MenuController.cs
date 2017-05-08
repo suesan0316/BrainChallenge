@@ -1,4 +1,4 @@
-using System.IO;
+ï»¿using System.IO;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -17,61 +17,61 @@ namespace BrainChallenge.Droid.Controller
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            // ‹¤’Ê‚Ìƒe[ƒ}‚ğ“K—p
+            // å…±é€šã®ãƒ†ãƒ¼ãƒã‚’é©ç”¨
             SetTheme(AppConst.targetTheme);
 
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.Menu);
 
-            // ƒT[ƒrƒX‚Ì‰Šú‰»‚ğÀs
+            // ã‚µãƒ¼ãƒ“ã‚¹ã®åˆæœŸåŒ–ã‚’å®Ÿè¡Œ
             ServiceIinitializer.Initialize(
                 new ServiceInitializeModel {DbPath = GetLocalFilePath("brainchallenge.db3")});
 
             _menuTable = FindViewById<TableLayout>(Resource.Id.menuTable);
 
-            // ƒQ[ƒ€‚Ìˆê——î•ñ‚ğæ“¾
+            // ã‚²ãƒ¼ãƒ ã®ä¸€è¦§æƒ…å ±ã‚’å–å¾—
             var gameModels = _service.GetGameList();
 
-            // ƒQ[ƒ€‚Ìí•Ê‚²‚Æ‚É…•½ƒXƒNƒ[ƒ‹‚ÉƒQ[ƒ€‚Ìˆê——î•ñ‚ğ•\¦‚µ‚Ü‚·
+            // ã‚²ãƒ¼ãƒ ã®ç¨®åˆ¥ã”ã¨ã«æ°´å¹³ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã«ã‚²ãƒ¼ãƒ ã®ä¸€è¦§æƒ…å ±ã‚’è¡¨ç¤ºã—ã¾ã™
             foreach (var type in gameModels)
             {
-                // ƒQ[ƒ€î•ñ‚ª3‚Â‚ğ–‚½‚È‚¢ê‡A€”õ’†‚ÌImgaeButton‚ğİ’è‚·‚é
+                // ã‚²ãƒ¼ãƒ æƒ…å ±ãŒ3ã¤ã‚’æº€ãŸãªã„å ´åˆã€æº–å‚™ä¸­ã®ImgaeButtonã‚’è¨­å®šã™ã‚‹
                 var min = 3;
 
-                // ƒQ[ƒ€í•Ê‚Ìƒ‰ƒIƒi[
+                // ã‚²ãƒ¼ãƒ ç¨®åˆ¥ã®ãƒ©ã‚ªãƒŠãƒ¼
                 var gameListTitleLinear = Util.GenerateView<LinearLayout>(this, "GameListTitleLinear");
-                // ƒQ[ƒ€í•Ê‚Ìƒ^ƒCƒgƒ‹
+                // ã‚²ãƒ¼ãƒ ç¨®åˆ¥ã®ã‚¿ã‚¤ãƒˆãƒ«
                 var gameTypeListTitle = Util.GenerateView<TextView>(this, "GameTypeListTitle");
 
                 gameTypeListTitle.Text = type.Key;
                 gameListTitleLinear.AddView(gameTypeListTitle);
                 _menuTable.AddView(gameListTitleLinear);
 
-                // ƒQ[ƒ€ˆê——‚Ì…•½ƒXƒNƒ[ƒ‹
+                // ã‚²ãƒ¼ãƒ ä¸€è¦§ã®æ°´å¹³ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«
                 var gameListScroll = Util.GenerateView<HorizontalScrollView>(this, "GameListScroll");
-                // ƒQ[ƒ€ˆê——‚Ìƒ‰ƒCƒi[
+                // ã‚²ãƒ¼ãƒ ä¸€è¦§ã®ãƒ©ã‚¤ãƒŠãƒ¼
                 var gameListLinaer = Util.GenerateView<LinearLayout>(this, "GameListLinaer");
 
                 foreach (var gameModel in type.Value)
                 {
-                    // ƒQ[ƒ€î•ñ‚Ìƒ‰ƒCƒi[
+                    // ã‚²ãƒ¼ãƒ æƒ…å ±ã®ãƒ©ã‚¤ãƒŠãƒ¼
                     var gameLinaer = Util.GenerateView<LinearLayout>(this, "GameLinaer");
-                    // ƒQ[ƒ€‚ÌƒCƒ[ƒWƒ{ƒ^ƒ“
+                    // ã‚²ãƒ¼ãƒ ã®ã‚¤ãƒ¡ãƒ¼ã‚¸ãƒœã‚¿ãƒ³
                     var gameButton = Util.GenerateView<ImageButton>(this, "GameButton");
                     gameButton.SetBackgroundResource((int) typeof(Resource.Drawable).GetField(gameModel.Icon)
                         .GetValue(null));
 
-                    //@ƒQ[ƒ€‚Ìƒ{ƒ^ƒ“‚ÌƒNƒŠƒbƒNƒAƒNƒVƒ‡ƒ“‚ğİ’è
+                    //ã€€ã‚²ãƒ¼ãƒ ã®ãƒœã‚¿ãƒ³ã®ã‚¯ãƒªãƒƒã‚¯ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ã‚’è¨­å®š
                     gameButton.Click += delegate
                     {
-                        // ƒQ[ƒ€ƒXƒ^[ƒg‰æ–Ê‚Ö‘JˆÚ
+                        // ã‚²ãƒ¼ãƒ ã‚¹ã‚¿ãƒ¼ãƒˆç”»é¢ã¸é·ç§»
                         var next = new Intent(this, typeof(GameStartController));
                         next.PutExtra("MyData", gameModel.GameId);
                         StartActivity(next);
                     };
 
-                    //ƒQ[ƒ€‚Ìƒ^ƒCƒgƒ‹
+                    //ã‚²ãƒ¼ãƒ ã®ã‚¿ã‚¤ãƒˆãƒ«
                     var gameTitle = Util.GenerateView<TextView>(this, "GameTitle");
                     gameTitle.Text = gameModel.GameName;
 
@@ -82,7 +82,7 @@ namespace BrainChallenge.Droid.Controller
                     min--;
                 }
 
-                // ƒQ[ƒ€‚Ìˆê——‚ª3‚ÂˆÈã‚É‚È‚é‚Ü‚ÅA€”õ’†ƒ{ƒ^ƒ“‚ğİ’è‚·‚é
+                // ã‚²ãƒ¼ãƒ ã®ä¸€è¦§ãŒ3ã¤ä»¥ä¸Šã«ãªã‚‹ã¾ã§ã€æº–å‚™ä¸­ãƒœã‚¿ãƒ³ã‚’è¨­å®šã™ã‚‹
                 for (var i = 0; i < min; i++)
                 {
                     var gameLinaer = Util.GenerateView<LinearLayout>(this, "GameLinaer");
@@ -106,7 +106,7 @@ namespace BrainChallenge.Droid.Controller
 
         private static string GetLocalFilePath(string filename)
         {
-            //w’è‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ÌƒpƒX‚ğæ“¾‚µ‚Ü‚·B‚È‚¯‚ê‚Îì¬‚µ‚Ä‚»‚ÌƒpƒX‚ğ•Ô‹p‚µ‚Ü‚·
+            //æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹ã‚’å–å¾—ã—ã¾ã™ã€‚ãªã‘ã‚Œã°ä½œæˆã—ã¦ãã®ãƒ‘ã‚¹ã‚’è¿”å´ã—ã¾ã™
             var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             return Path.Combine(path, filename);
         }

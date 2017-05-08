@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <TextView
+    style="@style/SelectGameTitle"
+    android:id="@+id/gameTitle" />
+  <brainchallenge.droid.custom.MyPager
+    android:id="@+id/viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v4.view.PagerTabStrip
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      android:paddingBottom="10dp"
+      android:paddingTop="10dp"
+      android:id="@+id/pagerTabStrip" />
+  </brainchallenge.droid.custom.MyPager>
+  <LinearLayout
+    style="@style/HelpGameLinear">
+    <TextView
+      style="@style/HelpGame"
+      android:id="@+id/explain" />
+  </LinearLayout>
+  <LinearLayout
+    style="@style/SelectGameOptionButtonLinear">
+    <Button
+      style="@style/SelectGameReturnButton"
+      android:id="@+id/returnButton" />
+  </LinearLayout>
+</LinearLayout>
