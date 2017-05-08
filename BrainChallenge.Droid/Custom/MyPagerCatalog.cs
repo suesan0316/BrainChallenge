@@ -19,7 +19,6 @@ namespace BrainChallenge.Droid.Custom
     // Tree catalog: holds image resource IDs and caption text:
     public class MyPagerCatalog
     {
-
         private readonly MyPagerPage[] myPagerPages;
 
         public MyPagerCatalog(MyPagerPage[] page)
