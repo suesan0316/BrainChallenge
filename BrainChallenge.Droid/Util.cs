@@ -41,19 +41,19 @@ namespace BrainChallenge.Droid
 
                 if (name.Equals("android:layout_height"))
                 {
-                    if (!int.TryParse(val.Value, out layoutHeight))
-                        if (val.Value.Equals("wrap_content"))
-                            layoutHeight = -2;
-                        else
-                            layoutHeight = -1;
+                    if (int.TryParse(val.Value, out layoutHeight)) continue;
+                    if (val.Value.Equals("wrap_content"))
+                        layoutHeight = ViewGroup.LayoutParams.WrapContent;
+                    else
+                        layoutHeight = ViewGroup.LayoutParams.MatchParent;
                 }
                 else if (name.Equals("android:layout_width"))
                 {
-                    if (!int.TryParse(val.Value, out layoutWidth))
-                        if (val.Value.Equals("wrap_content"))
-                            layoutWidth = -2;
-                        else
-                            layoutWidth = -1;
+                    if (int.TryParse(val.Value, out layoutWidth)) continue;
+                    if (val.Value.Equals("wrap_content"))
+                        layoutWidth = ViewGroup.LayoutParams.WrapContent;
+                    else
+                        layoutWidth = ViewGroup.LayoutParams.MatchParent;
                 }
                 else if (name.Equals("android:layout_marginBottom"))
                 {
@@ -97,12 +97,5 @@ namespace BrainChallenge.Droid
             view.LayoutParameters = layoutParams;
             return view;
         }
-
-        /*public static string GetLocalFilePath(string filename)
-        {
-            //指定されたファイルのパスを取得します。なければ作成してそのパスを返却します
-            var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            return System.IO.Path.Combine(path, filename);
-        }*/
     }
 }
