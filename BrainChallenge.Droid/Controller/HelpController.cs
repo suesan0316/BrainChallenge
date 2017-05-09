@@ -38,8 +38,8 @@ namespace BrainChallenge.Droid.Controller
 
             var pagerCatalog = new MyPagerCatalog(target.Help.Select((t, i) => new MyPagerPage
                 {
-                    caption = "No." + (i + 1),
-                    imageId = (int) typeof(Resource.Drawable).GetField(t.HelpImage).GetValue(null)
+                    Caption = "No." + (i + 1),
+                    ImageId = (int) typeof(Resource.Drawable).GetField(t.HelpImage).GetValue(null)
                 })
                 .ToArray());
 

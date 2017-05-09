@@ -33,7 +33,7 @@ namespace BrainChallenge.Droid.Custom
         {
             // Instantiate the ImageView and give it an image:
             var imageView = new ImageView(_context);
-            imageView.SetImageResource(MyPagerCatalog[position].imageId);
+            imageView.SetImageResource(MyPagerCatalog[position].ImageId);
 
             // Add the image to the ViewPager:
             var viewPager = container.JavaCast<ViewPager>();
@@ -59,7 +59,7 @@ namespace BrainChallenge.Droid.Custom
         // Display a caption for each Tree page in the PagerTitleStrip:
         public override ICharSequence GetPageTitleFormatted(int position)
         {
-            return new String(MyPagerCatalog[position].caption);
+            return new String(MyPagerCatalog[position].Caption);
         }
     }
 }
