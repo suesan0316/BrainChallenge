@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
+using Android.App;
 using Android.Content;
 using Android.Views;
 using Android.Widget;
@@ -9,6 +11,14 @@ namespace BrainChallenge.Droid
 {
     internal class Util
     {
+        private static readonly IEnumerable<XElement> Styles;
+
+        static Util()
+        {
+            var xml = XDocument.Load(Application.Context.Assets.Open("Styles.xml"));
+            Styles = xml.Descendants("style");
+        }
+
         public static T GenerateView<T>(Context context, string styleName) where T : View
         {
             var styleId = (int) typeof(Resource.Style).GetField(styleName).GetValue(null);
@@ -17,9 +27,7 @@ namespace BrainChallenge.Droid
             var args = new object[] {context, null, styleId, styleId};
             var view = (T) Activator.CreateInstance(viewType, args);
 
-            var xml = XDocument.Load(context.Assets.Open("Styles.xml"));
-            var styles = xml.Descendants("style");
-            var stylesResult = from n in styles let xAttribute = n.Attribute("name") where xAttribute != null && xAttribute.Value.Equals(styleName) select n;
+            var stylesResult = from n in Styles let xAttribute = n.Attribute("name") where xAttribute != null && xAttribute.Value.Equals(styleName) select n;
             var items = stylesResult.Descendants("item");
             var itemsResult = from n in items select n;
             var styleValues = itemsResult.ToList();

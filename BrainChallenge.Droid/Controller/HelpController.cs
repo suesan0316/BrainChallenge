@@ -36,7 +36,7 @@ namespace BrainChallenge.Droid.Controller
 
             _explain.Text = target.Help[0].Explain;
 
-            var pagerCatalog = new MyPagerCatalog(target.Help.Select((t, i) => new MyPagerPage
+            var pagerCatalog = new MyPagerCatalog(target.Help.AsParallel().AsOrdered().Select((t, i) => new MyPagerPage
                 {
                     Caption = "No." + (i + 1),
                     ImageId = (int) typeof(Resource.Drawable).GetField(t.HelpImage).GetValue(null)
