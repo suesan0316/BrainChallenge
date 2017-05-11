@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using BrainChallenge.Common.Client.ClientModel;
 using BrainChallenge.Common.Client.ClientService.InterFace;
 using BrainChallenge.Common.Data.DataService.Implement;
@@ -21,9 +22,15 @@ namespace BrainChallenge.Common.Client.ClientService.Implement
 
             var score = scoreService.Select(new ScoreEntity {GameId = gameId, Score = -1});
 
-            var setScore = gameInfo.ScoreType == 0
-                ? score.OrderByDescending(target => target.Score).Select(targert => targert.Score).Take(5).ToList()
-                : score.OrderBy(target => target.Score).Select(targert => targert.Score).Take(5).ToList();
+            List<int> setScore = null;
+
+            if (score != null)
+            {
+
+                setScore = gameInfo.ScoreType == 0
+                    ? score.OrderByDescending(target => target.Score).Select(targert => targert.Score).Take(5).ToList()
+                    : score.OrderBy(target => target.Score).Select(targert => targert.Score).Take(5).ToList();
+            }
 
             var gameDetailModel = new GameDetailModel
             {

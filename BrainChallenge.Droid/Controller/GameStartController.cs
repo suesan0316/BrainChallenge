@@ -41,10 +41,17 @@ namespace BrainChallenge.Droid.Controller
 
             var scoreText = new StringBuilder();
 
-            for (var i = 0; i < target.Score.Count; i++)
-                scoreText.Append(i + 1 + "." + target.Score[i] + "\n");
+            if (target.Score == null)
+            {
+                _gameScore.Text = "記録がありません。";
+            }
+            else
+            {
 
-            _gameScore.Text = scoreText.ToString();
+                for (var i = 0; i < target.Score.Count; i++)
+                    scoreText.Append(i + 1 + "." + target.Score[i] + "\n");
+                _gameScore.Text = scoreText.ToString();
+            }        
 
             _gameStartButton.Click += delegate
             {
