@@ -49,6 +49,7 @@
     <Compile Include="Data\DataService\Implement\HelpMasterService.cs" />
     <Compile Include="Data\DataService\Implement\SampleDataService.cs" />
     <Compile Include="Data\DataService\Implement\ScoreService.cs" />
+    <Compile Include="Data\Entity\Master\DetectiveGameMasterEntity.cs" />
     <Compile Include="Data\Entity\Master\HelpMasterEntity.cs" />
     <Compile Include="Data\Entity\General\ScoreEntity.cs" />
     <Compile Include="Data\Entity\Master\GameMasterEntity.cs" />
