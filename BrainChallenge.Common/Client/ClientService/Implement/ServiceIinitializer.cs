@@ -27,6 +27,7 @@ namespace BrainChallenge.Common.Client.ClientService.Implement
                     con.DropTable<GameMasterEntity>();
                     con.DropTable<HelpMasterEntity>();
                     con.DropTable<ScoreEntity>();
+                    con.DropTable<DetectiveGameMasterEntity>();
 
                     con.DropTable<SampleEntity>();
                 }
@@ -40,6 +41,7 @@ namespace BrainChallenge.Common.Client.ClientService.Implement
                 con.CreateTable<GameMasterEntity>();
                 con.CreateTable<HelpMasterEntity>();
                 con.CreateTable<ScoreEntity>();
+                con.CreateTable<DetectiveGameMasterEntity>();
 
                 con.CreateTable<SampleEntity>();
             }
@@ -55,6 +57,7 @@ namespace BrainChallenge.Common.Client.ClientService.Implement
                 var gameTypeMasterTestData = new List<GameTypeMasterEntity>();
                 var helpMasterTestData = new List<HelpMasterEntity>();
                 var scoreTestData = new List<ScoreEntity>();
+                var detectiveGameMasterData = new List<DetectiveGameMasterEntity>();
 
                 gameTypeMasterTestData.Add(new GameTypeMasterEntity {GameTypeId = 0, Name = "記憶力"});
                 gameTypeMasterTestData.Add(new GameTypeMasterEntity {GameTypeId = 1, Name = "柔軟性"});
@@ -197,10 +200,16 @@ namespace BrainChallenge.Common.Client.ClientService.Implement
                 helpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明4", HelpIndex = 3, Image = "detective_game_title" });
                 helpMasterTestData.Add(new HelpMasterEntity { GameId = 3, Explain = "ゲームの説明5", HelpIndex = 4, Image = "detective_game_title" });
 
+                detectiveGameMasterData.Add(new DetectiveGameMasterEntity { Level = 1, Point = 100, Tile = 4, CollectTile = 2, FakeFlg = false, FakeTile = 0 });
+                detectiveGameMasterData.Add(new DetectiveGameMasterEntity { Level = 2, Point = 200, Tile = 4, CollectTile = 2, FakeFlg = false, FakeTile = 0 });
+                detectiveGameMasterData.Add(new DetectiveGameMasterEntity { Level = 3, Point = 300, Tile = 4, CollectTile = 2, FakeFlg = true, FakeTile = 1 });
+                detectiveGameMasterData.Add(new DetectiveGameMasterEntity { Level = 4, Point = 400, Tile = 4, CollectTile = 2, FakeFlg = true, FakeTile = 2 });
+
                 gameTypeMasterTestData.ForEach(data => con.Insert(data));
                 gameMasterTestData.ForEach(data => con.Insert(data));
                 helpMasterTestData.ForEach(data => con.Insert(data));
                 scoreTestData.ForEach(data => con.Insert(data));
+                detectiveGameMasterData.ForEach(data => con.Insert(data));
             }
         }
     }

@@ -1,43 +1,32 @@
-﻿using SQLite;
-using System.Text;
+﻿using System.Text;
 
-namespace BrainChallenge.Common.Data.Entity.Master
+namespace BrainChallenge.Common.Client.ClientModel
 {
-    /// <summary>
-    /// 迷子を探せ!!マスターテーブルエンティティ
-    /// </summary>
-    [Table("DetectiveGameMaster")]
-    public class DetectiveGameMasterEntity
+    class DetectiveGameModel
     {
         /// <summary>
         /// レベル(PrimaryKey)
         /// </summary>
-        [PrimaryKey, Column("_level")]
         public int Level { get; set; }
         /// <summary>
         /// ポイント
         /// </summary>
-        [Column("_point")]
         public int Point { get; set; }
         /// <summary>
         /// タイル総数
         /// </summary>
-        [Column("_tile")]
         public int Tile { get; set; }
         /// <summary>
         /// 正解タイル数
         /// </summary>
-        [Column("_collectTile")]
         public int CollectTile { get; set; }
         /// <summary>
         /// フェイクタイルフラグ
         /// </summary>
-        [Column("_fakeFlg")]
-        public bool ?FakeFlg { get; set; }
+        public bool? FakeFlg { get; set; }
         /// <summary>
         /// フェイクタイル数
         /// </summary>
-        [Column("_fakeTile")]
         public int FakeTile { get; set; }
 
         public override string ToString()
