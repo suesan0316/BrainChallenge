@@ -16,6 +16,6 @@
         style="@style/GameTypeListScroll">
         <TableLayout
             android:id="@+id/menuTable"
-            style="@style/GameTypeListTable" />     
+            style="@style/GameTypeListTable" />
     </ScrollView>
 </LinearLayout>

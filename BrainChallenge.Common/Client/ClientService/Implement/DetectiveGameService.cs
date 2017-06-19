@@ -1,9 +1,5 @@
 ﻿using BrainChallenge.Common.Client.ClientService.InterFace;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using BrainChallenge.Common.Client.ClientModel;
 using BrainChallenge.Common.Data.DataService.Implement;
 

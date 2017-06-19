@@ -115,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConst.cs" />
+    <Compile Include="Controller\DetectiveGameController.cs" />
     <Compile Include="Controller\GameStartController.cs" />
     <Compile Include="Controller\HelpController.cs" />
     <Compile Include="Controller\MenuController.cs" />
@@ -137,6 +138,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Help.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\DetectiveGame.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

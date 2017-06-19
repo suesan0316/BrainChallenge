@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+        style="@style/DetectiveGameScoreLinaer">
+    <TextView
+        android:text="スコア : 0"
+         android:id="@+id/ScoreLabel"
+        style="@style/DetectiveGameScore" />
+  </LinearLayout>
+  <LinearLayout
+        style="@style/DetectiveGameStateLinaer"
+        android:gravity="center">
+        <TextView
+            android:text="Level:1 失敗回数:0/3"
+             android:id="@+id/LevelAndFaildCountLabel"
+            style="@style/DetectiveGameState" />
+    </LinearLayout>
+  <LinearLayout
+        style="@style/DetectiveGameInTitleLinear">
+        <ImageView
+            style="@style/DetectiveGameInTitleImage"
+            android:src="@drawable/detective_game_in_title" />
+        <ImageView
+            style="@style/DetectiveGameTargetImage"
+            android:id="@+id/DetecitiveTargetImg"
+            android:src="@drawable/detective_game_dog" />
+    </LinearLayout>
+   <GridLayout
+        style="@style/DetectiveGameTile"
+        android:id="@+id/GameTileGrid">
+  </GridLayout>
+</LinearLayout>
