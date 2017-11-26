@@ -50,18 +50,12 @@ namespace BrainChallenge.Droid
                 if (name.Equals("android:layout_height"))
                 {
                     if (int.TryParse(val.Value, out layoutHeight)) continue;
-                    if (val.Value.Equals("wrap_content"))
-                        layoutHeight = ViewGroup.LayoutParams.WrapContent;
-                    else
-                        layoutHeight = ViewGroup.LayoutParams.MatchParent;
+                    layoutHeight = val.Value.Equals("wrap_content") ? ViewGroup.LayoutParams.WrapContent : ViewGroup.LayoutParams.MatchParent;
                 }
                 else if (name.Equals("android:layout_width"))
                 {
                     if (int.TryParse(val.Value, out layoutWidth)) continue;
-                    if (val.Value.Equals("wrap_content"))
-                        layoutWidth = ViewGroup.LayoutParams.WrapContent;
-                    else
-                        layoutWidth = ViewGroup.LayoutParams.MatchParent;
+                    layoutWidth = val.Value.Equals("wrap_content") ? ViewGroup.LayoutParams.WrapContent : ViewGroup.LayoutParams.MatchParent;
                 }
                 else if (name.Equals("android:layout_marginBottom"))
                 {

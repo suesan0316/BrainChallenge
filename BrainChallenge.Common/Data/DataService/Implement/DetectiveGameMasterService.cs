@@ -1,7 +1,6 @@
 ﻿using BrainChallenge.Common.Data.Connection;
 using BrainChallenge.Common.Data.Entity.Master;
 using BrainChallenge.Common.Data.Service.Interface;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -15,7 +14,8 @@ namespace BrainChallenge.Common.Data.DataService.Implement
             {
                 var result = from record in con.Table<DetectiveGameMasterEntity>() select record;
 
-                return result.Count() != 0 ? result.ToList() : null;
+                var detectiveGameMasterEntities = result as IList<DetectiveGameMasterEntity> ?? result.ToList();
+                return detectiveGameMasterEntities.Count() != 0 ? detectiveGameMasterEntities.ToList() : null;
             }
         }
 
@@ -32,7 +32,8 @@ namespace BrainChallenge.Common.Data.DataService.Implement
                 if (t.FakeFlg != null) result = result.Where(data => data.FakeFlg == t.FakeFlg);
                 if (t.FakeTile != -1) result = result.Where(data => data.FakeTile == t.FakeTile);
 
-                return result.Count() != 0 ? result.ToList() : null;
+                var detectiveGameMasterEntities = result as IList<DetectiveGameMasterEntity> ?? result.ToList();
+                return detectiveGameMasterEntities.Count() != 0 ? detectiveGameMasterEntities.ToList() : null;
             }
         }
     }

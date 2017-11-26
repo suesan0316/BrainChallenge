@@ -14,7 +14,8 @@ namespace BrainChallenge.Common.Data.DataService.Implement
             using (var con = ConnectionProvider.GetConnection())
             {
                 var result = from record in con.Table<ScoreEntity>() select record;
-                return result.Count() != 0 ? result.ToList() : null;
+                var scoreEntities = result as IList<ScoreEntity> ?? result.ToList();
+                return scoreEntities.Count() != 0 ? scoreEntities.ToList() : null;
             }
         }
 
@@ -30,7 +31,8 @@ namespace BrainChallenge.Common.Data.DataService.Implement
                     result = result.Where(data => data.Score == t.Score);
                 if (!t.RegistDate.Equals(new DateTime()))
                     result = result.Where(data => data.RegistDate.Equals(t.RegistDate));
-                return result.Count() != 0 ? result.ToList() : null;
+                var scoreEntities = result as IList<ScoreEntity> ?? result.ToList();
+                return scoreEntities.Count() != 0 ? scoreEntities.ToList() : null;
             }
         }
 

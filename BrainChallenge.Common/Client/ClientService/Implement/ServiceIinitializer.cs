@@ -31,8 +31,9 @@ namespace BrainChallenge.Common.Client.ClientService.Implement
 
                     con.DropTable<SampleEntity>();
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
+                    // ignored
                 }
 
 

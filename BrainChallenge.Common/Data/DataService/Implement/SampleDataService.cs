@@ -24,7 +24,8 @@ namespace BrainChallenge.Common.Data.DataService.Implement
             {
                 var result = from record in con.Table<SampleEntity>() select record;
 
-                return result.Count() != 0 ? result.ToList() : null;
+                var sampleEntities = result as IList<SampleEntity> ?? result.ToList();
+                return sampleEntities.Count() != 0 ? sampleEntities.ToList() : null;
             }
         }
 
@@ -39,7 +40,8 @@ namespace BrainChallenge.Common.Data.DataService.Implement
                 if (t.Name != null)
                     result = result.Where(data => data.Name.Equals(t.Name));
 
-                return result.Count() != 0 ? result.ToList() : null;
+                var sampleEntities = result as IList<SampleEntity> ?? result.ToList();
+                return sampleEntities.Count() != 0 ? sampleEntities.ToList() : null;
             }
         }
     }

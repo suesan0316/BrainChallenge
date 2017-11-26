@@ -1,11 +1,8 @@
 ﻿using BrainChallenge.Common.Data.Connection;
 using BrainChallenge.Common.Data.Entity.Master;
 using BrainChallenge.Common.Data.Service.Interface;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BrainChallenge.Common.Data.DataService.Implement
 {
@@ -17,7 +14,8 @@ namespace BrainChallenge.Common.Data.DataService.Implement
             {
                 var result = from record in con.Table<HelpMasterEntity>() select record;
 
-                return result.Count() != 0 ? result.ToList() : null;
+                var helpMasterEntities = result as IList<HelpMasterEntity> ?? result.ToList();
+                return helpMasterEntities.Count() != 0 ? helpMasterEntities.ToList() : null;
             }
         }
 
@@ -36,7 +34,8 @@ namespace BrainChallenge.Common.Data.DataService.Implement
                 if (t.Image != null)
                     result = result.Where(data => data.Image.Equals(t.Image));
 
-                return result.Count() != 0 ? result.ToList() : null;
+                var helpMasterEntities = result as IList<HelpMasterEntity> ?? result.ToList();
+                return helpMasterEntities.Count() != 0 ? helpMasterEntities.ToList() : null;
             }
         }
     }
